@@ -104,5 +104,14 @@ const siteConfig = {
   // template. For example, if you need your repo's URL...
   // repoUrl: 'https://github.com/facebook/test-site',
 };
-
+module.exports = {
+  plugins: ['@docusaurus/plugin-google-analytics'],
+  themeConfig: {
+    googleAnalytics: {
+      trackingID: 'ottaa-project:analytics_150845831',
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
+  },
+};
 module.exports = siteConfig;
