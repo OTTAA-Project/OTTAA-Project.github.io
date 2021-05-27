@@ -47,7 +47,7 @@ You can be part of this life-changer tech, join us in this social impact open so
 
  Official Android developer tools
 
-  ![Android Studio](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/64px-Android_Studio_icon.svg.png)
+  ![Android Studio](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Android_Studio_Trademark.svg/128px-Android_Studio_Trademark.svg.png)
     [Android Studio](https://developer.android.com/studio)
 
  Repository
@@ -64,6 +64,9 @@ You can be part of this life-changer tech, join us in this social impact open so
 
    ![Testproject](https://blog.testproject.io/wp-content/themes/testprojectblog/img/t-plogo.png)
     [Testproject](http://testproject.io)
+
+   ![CircleCi](https://avatars.githubusercontent.com/u/1231870?s=100&v=4)
+    [CircleCi](http://app.circleci.com/)
 
 
 ## Documentation
@@ -388,6 +391,14 @@ the user can be expelled from the community in the following situation :
 
 * **Repeated conduct**
 * **Posting of pornographic content**
+
+# Testing
+
+## Master [![CircleCI](https://circleci.com/gh/OTTAA-Project/OTTAAProject/tree/master.svg?style=svg)](https://circleci.com/gh/OTTAA-Project/OTTAAProject/?master)
+
+## Dev [![CircleCI](https://circleci.com/gh/OTTAA-Project/OTTAAProject/tree/dev.svg?style=svg)](https://circleci.com/gh/OTTAA-Project/OTTAAProject/?dev)
+
+
 
 
 

@@ -44,6 +44,7 @@ const siteConfig = {
 
   // If you have users set above, you add it here:
   users,
+  gaTrackingId: 'G-GE16D1JY6T',
 
   /* path to images for header/footer */
   headerIcon: './img/favicon1.ico',
@@ -104,14 +105,5 @@ const siteConfig = {
   // template. For example, if you need your repo's URL...
   // repoUrl: 'https://github.com/facebook/test-site',
 };
-module.exports = {
-  plugins: ['@docusaurus/plugin-google-analytics'],
-  themeConfig: {
-    googleAnalytics: {
-      trackingID: 'ottaa-project:analytics_150845831',
-      // Optional fields.
-      anonymizeIP: true, // Should IPs be anonymized?
-    },
-  },
-};
+
 module.exports = siteConfig;
