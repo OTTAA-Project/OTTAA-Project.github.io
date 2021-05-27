@@ -55,6 +55,9 @@ const siteConfig = {
     primaryColor: '#ff8138',
     secondaryColor: '#050756',
   },
+  gaTrackingId: 'UA-12345678-9',
+  gaGtag: true,
+
 
   /* Custom fonts for website */
   /*
