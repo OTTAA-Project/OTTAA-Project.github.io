@@ -82,7 +82,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: [url + "js/ep-google-tag-manager.js",'https://buttons.github.io/buttons.js'],
+  scripts: ["https://ottaa-project.github.io/"+ "js/ep-google-tag-manager.js",'https://buttons.github.io/buttons.js'],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
