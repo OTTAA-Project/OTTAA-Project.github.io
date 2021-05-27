@@ -44,7 +44,6 @@ const siteConfig = {
 
   // If you have users set above, you add it here:
   users,
-  gaTrackingId: 'G-GE16D1JY6T',
 
   /* path to images for header/footer */
   headerIcon: './img/favicon1.ico',
