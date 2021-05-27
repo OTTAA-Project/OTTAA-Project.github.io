@@ -55,7 +55,7 @@ const siteConfig = {
     primaryColor: '#ff8138',
     secondaryColor: '#050756',
   },
-  gaTrackingId: 'UA-12345678-9',
+  gaTrackingId: 'G-GE16D1JY6T',
   gaGtag: true,
 
 
@@ -82,7 +82,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ["https://ottaa-project.github.io/"+ "js/ep-google-tag-manager.js",'https://buttons.github.io/buttons.js'],
+  scripts: ["./js/ep-google-tag-manager.js",'https://buttons.github.io/buttons.js'],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
