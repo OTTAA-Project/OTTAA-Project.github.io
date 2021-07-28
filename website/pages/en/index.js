@@ -215,12 +215,9 @@ class Index extends React.Component {
       <Block layout="fourColumn">
         {[
           {
-            content: 'We are helping thousands of speech impaired<br> people to communicate, to improve their life quality',
             button:`watch the video`+`uri:http://www.youtube.com/watch?v=zAL7yWxc-gU`,
             image: 'http://img.youtube.com/vi/zAL7yWxc-gU/0.jpg',
-            imageAlign: 'left',
-            textAlign:'left',
-            title: 'Returning the voice to all <br> those who lost it ',
+            imageAlign: 'bottom',
           },
         
         ]}
