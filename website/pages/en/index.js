@@ -115,6 +115,7 @@ class Index extends React.Component {
         {[
           {
             align:'left',
+            Description:'Justin: ”This is foundational to the team.”',
             content:
               'Be a global one-stop solution for technological solutions for people with disabilities. With innovation, affordability and empathy as key motivators and guidelines. ',
             title:'Our Vision',
