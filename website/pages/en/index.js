@@ -110,6 +110,20 @@ class Index extends React.Component {
       </Block>
     );
 
+    const OurVision = () => (
+      <Block background="light">
+        {[
+          {
+            align:'left',
+            content:
+              'Be a global one-stop solution for technological solutions for people with disabilities. With innovation, affordability and empathy as key motivators and guidelines. ',
+            title:'Our Vision',
+          },
+        ]}
+      </Block>
+    );
+
+
     const Description = () => (
       <Block background="dark">
         {[
@@ -123,6 +137,8 @@ class Index extends React.Component {
         ]}
       </Block>
     );
+
+
 
     const Features = () => (
       <Block layout="fourColumn">
@@ -174,6 +190,7 @@ class Index extends React.Component {
         <div className="mainContainer">
           <Features />
           <TryOut />
+          <OurVision/>
           <Description />
           <Showcase />
         </div>
