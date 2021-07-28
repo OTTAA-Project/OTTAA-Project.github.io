@@ -145,9 +145,65 @@ class Index extends React.Component {
           {
             content:
               'This is another description of how this project is useful',
-            image: `${baseUrl}./img/undraw_note_list.svg`,
+            image: `${baseUrl}./img/tutorial01.jpg`,
             imageAlign: 'right',
             title: 'How it works',
+          },
+        ]}
+      </Block>
+    );
+
+    const TutorialDescription1 = () =>(
+      <Block background="dark">
+        {[
+          {
+            content:
+              'Touch one or more pictograms to create a sentence as long as you want. The pictograms are automatically related and you will always have one more pictogram to add.',
+            image: `${baseUrl}./img/tutorial01.jpg`,
+            imageAlign: 'right',
+            title: 'Create your phrases',
+          },
+        ]}
+      </Block>
+    );
+
+    const TutorialDescription2 = () =>(
+      <Block background="light">
+        {[
+          {
+            content:
+              'Once the phrase is created, touch the OTTAA logo to speak aloud or using the share icon, you can send your phrase through the most used social networks.',
+            image: `${baseUrl}./img/tutorial02.jpg`,
+            imageAlign: 'left',
+            title: 'Talk to the world',
+          },
+        ]}
+      </Block>
+    );
+
+    const TutorialDescription3 = () => (
+      <Block background="dark">
+        {[
+          {
+            content:
+              'In OTTAA you have access to thousands of pictograms to talk about whatever you want, find the Picto Gallery in the lower left corner of the main screen.',
+            image: `${baseUrl}./img/tutorial03.jpg`,
+            imageAlign: 'right',
+            title: 'Access thousands of pictograms',
+          },
+        ]}
+      </Block>
+    );
+
+    const TutorialDescription4 = () => (
+      <Block background="light">
+        {[
+          {
+            content:
+              'Enter the games section to learn by playing. OTTAA has didactic games to learn vocabulary, concepts and much more. Also, more games will be available soon!',
+            image: `${baseUrl}./img/tutorial04.jpg`,
+            imageAlign: 'left',
+            title: 'Play and Learn',
           },
         ]}
       </Block>
@@ -216,7 +272,10 @@ class Index extends React.Component {
           <FirstDescription />
           <Center/>
           <LeaderShipGovernance/> 
-          <Description />
+          <TutorialDescription1 />
+          <TutorialDescription2 />
+          <TutorialDescription3 />
+          <TutorialDescription4 />
           <Showcase />
         </div>
       </div>
