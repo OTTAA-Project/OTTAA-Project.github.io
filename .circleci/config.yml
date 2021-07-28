@@ -95,5 +95,9 @@ workflows:
   version: 2.1
   build_and_deploy:
     jobs:
-     - deploy-website    
+     - deploy-website
+        filters:
+            branches:
+              only:
+                - production
 #         filters: *filter-only-master
