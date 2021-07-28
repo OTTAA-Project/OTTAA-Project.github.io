@@ -60,7 +60,7 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}./img/lines.svg`} />
+        <Logo img_src={`${baseUrl}./img/white_logo.png`} />
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
@@ -93,22 +93,6 @@ class Index extends React.Component {
     );
 
 
-    const TryOut = () => (
-      <Block id="try">
-        {[
-          {
-            content:
-              'OTTAA Project is an Alternative Augmentative Communication System, intended for '
-			  +'people with speech disabilities. It is a mobile, fast and effective tool '
-			  +'that significantly improves the quality of life'+'and facilitates social and labor integration.',
-			button:`watch the video`+`uri:http://www.youtube.com/watch?v=zAL7yWxc-gU`,
-            image: `http://img.youtube.com/vi/zAL7yWxc-gU/0.jpg`,
-            imageAlign: 'left',
-            title: 'Welcome to OTTAA Project ',
-          },
-        ]}
-      </Block>
-    );
 
     const OurVision = () => {
 
@@ -171,13 +155,15 @@ class Index extends React.Component {
 
 
 
-    const Features = () => (
+    const FirstDescription = () => (
       <Block layout="fourColumn">
         {[
           {
             content: 'We are helping thousands of speech impaired<br> people to communicate, to improve their life quality',
-            image: `${baseUrl}./img/voice.svg`,
-            imageAlign: 'top',
+            button:`watch the video`+`uri:http://www.youtube.com/watch?v=zAL7yWxc-gU`,
+            image: 'http://img.youtube.com/vi/zAL7yWxc-gU/0.jpg',
+            imageAlign: 'left',
+            textAlign:'left',
             title: 'Returning the voice to all <br> those who lost it ',
           },
         
@@ -227,8 +213,7 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Features />
-          <TryOut />
+          <FirstDescription />
           <Center/>
           <LeaderShipGovernance/> 
           <Description />
