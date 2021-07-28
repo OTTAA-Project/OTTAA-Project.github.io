@@ -6,7 +6,7 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ottaa-project.github.io//blog"/>
     <subtitle>The best place to stay up-to-date with the latest OTTAA Project news and events.</subtitle>
-    <logo>https://ottaa-project.github.io//./img/favicon1.ico</logo>
+    <logo>https://ottaa-project.github.io//./img/orange_logo.png</logo>
     <rights>Copyright © 2021 OTTAA Project</rights>
     <entry>
         <title type="html"><![CDATA[New Version 1.0.0]]></title>

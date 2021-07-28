@@ -46,13 +46,13 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: './img/favicon1.ico',
-  footerIcon: './img/favicon1.ico',
-  favicon: './img/favicon1.ico',
+  headerIcon: './img/orange_logo.png',
+  footerIcon: './img/orange_logo.png',
+  favicon: './img/orange_logo.png',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#ff8138',
+    primaryColor: '#ff6a00',
     secondaryColor: '#050756',
   },
   gaTrackingId: 'G-GE16D1JY6T',

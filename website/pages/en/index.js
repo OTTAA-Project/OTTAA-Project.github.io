@@ -134,8 +134,7 @@ class Index extends React.Component {
       return (
         <div className ="productShowcaseSection paddingBottom">
           <h2>Our Community</h2>
-          <p align ="justify">Our community is a crucible of experiences and capabilities, from software developers, biomedical engineers, speech therapists, families, and people with disabilities. We treat ourselves as equals with respect and empathy
-          
+          <p align ="justify">Our community is a crucible of experiences and capabilities, from software developers, biomedical engineers, speech therapists, families, and people with disabilities. We treat ourselves as equals with respect and empathy         
         </p>
         </div>
       );
@@ -146,9 +145,9 @@ class Index extends React.Component {
         <div className ="productShowcaseSection paddingBottom">
           <h2>Leadership and Governance</h2>
           <p align =" justify" >As with any large software development, we have to analyze, review and approve any change made to the software to be consistent and respectful of our users, most importantly with those that are not used to or have a hard time facing changes. 
-  <br></br>Nevertheless we would love to hear your suggestions, improvements or crazy new ideas.
-  <br></br>For your contribution to be seamless and enjoyable, we suggest you to start with our bite-size "Good first contributions", up until you feel confident enough to face the big features.
-</p>
+            <br></br>Nevertheless we would love to hear your suggestions, improvements or crazy new ideas.
+            <br></br>For your contribution to be seamless and enjoyable, we suggest you to start with our bite-size "Good first contributions", up until you feel confident enough to face the big features.
+          </p>
         </div>
       );
     }
