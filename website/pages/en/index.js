@@ -92,6 +92,33 @@ class Index extends React.Component {
       </Container>
     );
 
+    const LeftBlock = (props) =>(
+      <Container 
+        padding={['bottom', 'top']}
+        id={props.id}
+        background={props.background}>
+        <GridBlock
+          align="left"
+          contents={props.children}
+          layout={props.layout}
+        />
+      </Container>
+    );
+
+    const RightBlock = (props) =>(
+      <Container 
+        padding={['bottom', 'top']}
+        id={props.id}
+        background={props.background}>
+        <GridBlock
+          align="left"
+          contents={props.children}
+          layout={props.layout}
+        />
+      </Container>
+    );
+
+
 
 
     const OurVision = () => {
@@ -154,7 +181,7 @@ class Index extends React.Component {
     );
 
     const TutorialDescription1 = () =>(
-      <Block background="dark">
+      <LeftBlock background="dark">
         {[
           {
             content:
@@ -164,11 +191,11 @@ class Index extends React.Component {
             title: 'Create your phrases',
           },
         ]}
-      </Block>
+      </LeftBlock>
     );
 
     const TutorialDescription2 = () =>(
-      <Block background="light">
+      <RightBlock background="light">
         {[
           {
             content:
@@ -178,11 +205,11 @@ class Index extends React.Component {
             title: 'Talk to the world',
           },
         ]}
-      </Block>
+      </RightBlock>
     );
 
     const TutorialDescription3 = () => (
-      <Block background="dark">
+      <LeftBlock background="dark">
         {[
           {
             content:
@@ -192,11 +219,11 @@ class Index extends React.Component {
             title: 'Access thousands of pictograms',
           },
         ]}
-      </Block>
+      </LeftBlock>
     );
 
     const TutorialDescription4 = () => (
-      <Block background="light">
+      <RightBlock background="light">
         {[
           {
             content:
@@ -206,7 +233,7 @@ class Index extends React.Component {
             title: 'Play and Learn',
           },
         ]}
-      </Block>
+      </RightBlock>
     );
 
 
