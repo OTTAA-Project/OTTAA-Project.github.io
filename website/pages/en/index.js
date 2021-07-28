@@ -110,21 +110,52 @@ class Index extends React.Component {
       </Block>
     );
 
-    const OurVision = () => (
-      <Block background="light">
-        {[
-          {
-            align:'left',
-            Description:'Justin: ”This is foundational to the team.”',
-            content:
-              'Be a global one-stop solution for technological solutions for people with disabilities. With innovation, affordability and empathy as key motivators and guidelines. ',
-            title:'Our Vision',
-          },
-        ]}
-      </Block>
-    );
+    const OurVision = () => {
+
+      return (
+        <div className="productShowcaseSection paddingBottom">
+          <h2>Our Vision</h2>
+          <p>Be a global one-stop solution for technological solutions for people with disabilities. With innovation, affordability and empathy as key motivators and guidelines. </p>
+        </div>
+      );
+    };
+
+    const OurMision = () => {
+
+      return (
+        <div className="productShowcaseSection paddingBottom">
+          <h2>Our Mission</h2>
+          <p>Everyday we work to improve people with disabilities lifestyle by returning the voice to all those who have lost it; we are sure that technology can empower people with disabilities. </p>
+        </div>
+      );
+    };
+
+    const OurComunity = () =>{
+      return (
+        <div className ="productShowcaseSection paddingBottom">
+          <h2>Our Community</h2>
+          <p align ="justify">Our community is a crucible of experiences and capabilities, from software developers, biomedical engineers, speech therapists, families, and people with disabilities. We treat ourselves as equals with respect and empathy
+          
+        </p>
+        </div>
+      );
+    }
+
+    const LeaderShipGovernance = () =>{
+      return (
+        <div className ="productShowcaseSection paddingBottom">
+          <h2>Leadership and Governance</h2>
+          <p align =" justify" >As with any large software development, we have to analyze, review and approve any change made to the software to be consistent and respectful of our users, most importantly with those that are not used to or have a hard time facing changes. 
+  <br></br>Nevertheless we would love to hear your suggestions, improvements or crazy new ideas.
+  <br></br>For your contribution to be seamless and enjoyable, we suggest you to start with our bite-size "Good first contributions", up until you feel confident enough to face the big features.
+</p>
+        </div>
+      );
+    }
 
 
+
+    
     const Description = () => (
       <Block background="dark">
         {[
@@ -185,13 +216,22 @@ class Index extends React.Component {
       );
     };
 
+    const Center = () =>{
+      return (
+        <table>
+          <tr><td><OurVision/></td><td><OurMision/></td><td><OurComunity/></td></tr>
+        </table>
+      );      
+    }
+
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
           <TryOut />
-          <OurVision/>
+          <Center/>
+          <LeaderShipGovernance/> 
           <Description />
           <Showcase />
         </div>
