@@ -8,4 +8,5 @@ In this section you can find all about the OTTAA-Project Devices
 * **[Sip & Puff switch](/docs/sipAndPuff)**
 * **[Scroll & Press](/docs/scrollAndPress)**
 * **[Worm Accessible Keyboard](/docs/wormAccessible)**
+* **[Press And Press](/docs/pressAndPress)**
 
