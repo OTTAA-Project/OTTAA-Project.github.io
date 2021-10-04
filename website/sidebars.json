@@ -2,7 +2,7 @@
   "docs": {
     "Readme":["read-me"],
     "Documentation": ["welcome","Resources","analytics"]
-    ,"Accessibility":["sipAndPuff","wormAccessible","scrollAndPress"]
+    ,"Accessibility":["sipAndPuff","wormAccessible","scrollAndPress","pressAndPress"]
     ,"Information":["contributing","codeofconduct"]
   }
 }
