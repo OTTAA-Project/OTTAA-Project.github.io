@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Worm Accessible Keyboard · OTTAA Project</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="The Worm accessible keyboard allows the user to interact with a PC, tablet or smartphone using 3 commands, which enables the selection of items on the screen with OTTAA Project&#x27;s screen scan functionality (Move right or left and select)."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Worm Accessible Keyboard · OTTAA Project"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ottaa-project.github.io//"/><meta property="og:description" content="The Worm accessible keyboard allows the user to interact with a PC, tablet or smartphone using 3 commands, which enables the selection of items on the screen with OTTAA Project&#x27;s screen scan functionality (Move right or left and select)."/><meta property="og:image" content="https://ottaa-project.github.io/./img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://ottaa-project.github.io/./img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/./img/orange_logo.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GE16D1JY6T"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'G-GE16D1JY6T');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/./img/orange_logo.png" alt="OTTAA Project"/><h2 class="headerTitleWithLogo">OTTAA Project</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/welcome" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Accessibility</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Readme</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/read-me">Readme</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Documentation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/welcome">Wiki</a></li><li class="navListItem"><a class="navItem" href="/docs/Resources">Resources</a></li><li class="navListItem"><a class="navItem" href="/docs/analytics">Analytics Implementation</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Accessibility</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/sipAndPuff">Sip &amp; Puff switch</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/wormAccessible">Worm Accessible Keyboard</a></li><li class="navListItem"><a class="navItem" href="/docs/scrollAndPress">Scroll &amp; Press</a></li><li class="navListItem"><a class="navItem" href="/docs/pressAndPress">Press And Press</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Information</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/contributing">Contributing</a></li><li class="navListItem"><a class="navItem" href="/docs/codeofconduct">Code Of Conduct</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Worm Accessible Keyboard</h1></header><article><div><span><p>The Worm accessible keyboard allows the user to interact with a PC, tablet or smartphone using 3 commands, which enables the selection of items on the screen with OTTAA Project's screen scan functionality (Move right or left and select).</p>
+<p>The device has been specifically designed for motor impaired people who have difficulties in their fine motor skills.
+It is compatible with Android, Windows, MacOS and Linux.</p>
+<p><img src="../img/worms.jpeg" alt="WhatsApp Image 2020-10-06 at 14.28.40.jpeg"></p>
+<h1><a class="anchor" aria-hidden="true" id="materials"></a><a href="#materials" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Materials</h1>
+<ul>
+<li>Bale wire 2mm x 590mm.</li>
+<li>Black synthetic hose 4x7mm x 600mm.</li>
+<li>Limit switch (x9).</li>
+<li>PCB - Logitech M170 Mouse.</li>
+<li>Battery holder case.</li>
+<li>Switch ON/OFF.</li>
+<li>3.5mm male Jack and stereo female socket (x2 each).</li>
+<li>Bipolar cable D: 4mm, L: 50cm.</li>
+<li>O-shaped ring, D:50mm (x3).</li>
+<li>Self-tapping screw 2.5mm.</li>
+<li>Screw M8 (75mm).</li>
+<li>Nut (M8).</li>
+<li>3D printed C-type clamp (3 parts). Link: <a href="https://drive.google.com/file/d/1q8pt_Tc9yp30RNbcw8l60s-WcBIo4n65/view?usp=sharing">M</a>, <a href="https://drive.google.com/file/d/1WTxBhuesPkDgji2PdniFsReWqprZWFa9/view?usp=sharing">N</a>, <a href="https://drive.google.com/file/d/124NCF8SRWjaoeRgZaaqb9-l5KFv0VJqr/view?usp=sharing">O</a>.</li>
+<li>3D printed Accept Button (5 parts). Link: <a href="https://drive.google.com/file/d/1h_F0gbu5rrsd9OKOocq628bNDKaxRvq0/view?usp=sharing">P</a>, <a href="https://drive.google.com/file/d/1OsxYsJxxDckRL8vdeQqWA4Y82mbkkstp/view?usp=sharing">Q</a>, <a href="https://drive.google.com/file/d/1xL6k8kxHQhgLL_lPmevPxlBy2CNAeDGq/view?usp=sharing">R</a>, <a href="https://drive.google.com/file/d/1yS8quPk7pbEb4WxdDVrEHb_aqjrXKeSZ/view?usp=sharing">S</a>, <a href="https://drive.google.com/file/d/1XYNbZZP-u4jPhww7EVhSIyInC8K279Kw/view?usp=sharing">T</a>.</li>
+<li>3D printed Right Button (3 parts). Link: <a href="https://drive.google.com/file/d/1h0bkYA0eYd6-Q-3komtwQxRLjLJ1WJws/view?usp=sharing">U</a>, <a href="https://drive.google.com/file/d/1Yas75XJbZLEOfESdPhgSxmrnA-9inPtk/view?usp=sharing">V</a>, <a href="https://drive.google.com/file/d/1vNSCoIjoTm8usaYAx7RvuRkmeK1WUOqJ/view?usp=sharing">W</a>.</li>
+<li>3D printed Left Button (3 parts). Link: <a href="https://drive.google.com/file/d/15imiRSKJwuGtycxIAygMaGpuIfjjPAGn/view?usp=sharing">X</a>, <a href="https://drive.google.com/file/d/1YurHOTdBFYS9Ibjdun6ofMPSIcmrr318/view?usp=sharing">Y</a>, <a href="https://drive.google.com/file/d/1rngqET3UWs7N8oFh70l9hl5s22rMiVWx/view?usp=sharing">Z</a>.</li>
+<li>3D printed Cable Connector (x2). Link: <a href="https://drive.google.com/file/d/1dSQIOXJcjEa6XMHrVBW0lc3gF5BdvAX6/view?usp=sharing">AA</a>.</li>
+<li>3D printed End Caps (x2). Link: <a href="https://drive.google.com/file/d/1VOLtOgkQFtzj87MXfqcwVaIC_Cm7pYkP/view?usp=sharing">AB</a>.</li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="procedure"></a><a href="#procedure" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Procedure</h1>
+<h2><a class="anchor" aria-hidden="true" id="3d-printing"></a><a href="#3d-printing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3D Printing</h2>
+<p>Parts M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, AA and AB 3D printing settings:</p>
+<ul>
+<li>Material: PLA.</li>
+<li>Temperature of the hotend: 210-215 °C.</li>
+<li>Temperature of the print bed: 50-60 °C.</li>
+<li>Top and Bottom Layers: 3.</li>
+<li>Perimeter Shells: 3.</li>
+<li>Infill: 25%.</li>
+<li>Support: 75°(only X.stl).</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="dismantle-mouse--logitech-m170"></a><a href="#dismantle-mouse--logitech-m170" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Dismantle Mouse  Logitech M170</h2>
+<ul>
+<li>Take out the mouse PCB and remove the limit switches from the left, right and scroll click.
+Assemble the Accept Button</li>
+<li>Weld the ON/OFF switch terminals to a cable. Introduce the switch into part P as shown in <a href="https://drive.google.com/file/d/1rQlzX3SA1ZpK4RqxPKlBLPkC3BN2ieWl/view?usp=sharing">Figure 12</a>. Then apply pressure to fit part S to the switch as shown in <a href="https://drive.google.com/file/d/1B6Fadx-2Dt2_RyQQ3_Fai0At_Tww5DyD/view?usp=sharing">Figure 13</a>.</li>
+<li>With the help of a cable, connect 3 limit switches in a parallel connection, and then weld the cable to the PCB.
+Place the limit switches in part P as shown in <a href="https://drive.google.com/file/d/1lvGDZfQDvGuciLXX7o622FTA1hyLDtzi/view?usp=sharing">Figure 14</a> and secure the joint with glue.</li>
+<li>Weld the terminals of a 3.5mm Jack plug to a bipolar cable, and introduce it in part P as shown in <a href="https://drive.google.com/file/d/1AoxQKYjDpqbXABTT8KVyjfN5UgnzqPPY/view?usp=sharing">Figure 15</a>.</li>
+<li>Weld the terminals of the battery holder case to a bipolar cable. Introduce it in part P as shown in <a href="https://drive.google.com/file/d/1rCBej79M5l-g3fGtbqzbrjm_DL0UZ_bf/view?usp=sharing">Figure 16</a>. Part P has 2 protruding ends; first, in a diagonal direction, fit one of the protruding ends into the hole of part P, then straighten it and apply pressure until the second protruding end locks.</li>
+<li>Introduce the metal spring over the PCB as shown in <a href="https://drive.google.com/file/d/13SZR6xpKsCX0LVE47rKoHvujnwL6-bz8/view?usp=sharing">Figure 17</a>.</li>
+<li>Place the O-shaped ring on the depression/indentation of part R, cut it to size (<a href="https://drive.google.com/file/d/1RYr3k5bBD5nfrlU_CzCFEdPdczC2YMYv/view?usp=sharing">Figure 18</a>) and glue it.</li>
+<li>Insert a AA battery in the battery holder case, then the battery cover (R) on part P, and fix it with the 2.5mm screw (<a href="https://drive.google.com/file/d/1ACtYV6GcBX-9Hxl8Jr9_NSbUKZPURiJR/view?usp=sharing">Figure 19</a>).</li>
+<li>Fit part T with part Q as shown in <a href="https://drive.google.com/file/d/1fJrsaHwCh4zcejAyyrfOkX37XuOHInPE/view?usp=sharing">Figure 20</a>, and optionally use a few drops of glue to secure the joint.</li>
+<li>For the final assembly of the Accept Button, part P has 3 slots and part Q has 3 protruding ends. In a diagonal direction, match one of the protruding ends with one slot and apply pressure. Then straighten, match and apply pressure on the second protruding end and repeat for the third one (<a href="https://drive.google.com/file/d/1cHqCND0B8KEiWSx2E8kIIdvJVVLjs4nQ/view?usp=sharing">Figure 21</a>).</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="assemble-right-button"></a><a href="#assemble-right-button" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Assemble Right Button</h2>
+<ul>
+<li>Connect 3 limit switches in a parallel connection with a wire and weld them to a Jack plug and the stereo output cable. Place them in part U, and optionally use glue to assure them.</li>
+<li>Place the 3.5mm Jack plug in part U.</li>
+<li>Attach with silicone the metal spring inside the part U.</li>
+<li>Put the O-shaped ring in the depression of part U, cut it to size and glue it.</li>
+<li>Fix part W inside part V, and glue it to secure the joint.</li>
+<li>For the final assembly of the Right Button, part U has 3 slots and part V has 3 protruding ends. In a diagonal direction, match one of the protruding ends with one slot and apply pressure. Then straighten, match and apply pressure on the second protruding end and repeat for the third one.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="assemble-left-button"></a><a href="#assemble-left-button" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Assemble Left Button</h2>
+<ul>
+<li>Repeat the assembly instructions for the Right Button but with parts X, Z y Y respectively.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="assemble-the-c-type-clamp"></a><a href="#assemble-the-c-type-clamp" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Assemble the C-type Clamp</h2>
+<ul>
+<li>Put the M8 nut inside part M (<a href="https://drive.google.com/file/d/14cTdeDuYhEmQXeikW_6okFefL1tUqB2_/view?usp=sharing">Figure 22</a>).</li>
+<li>Put part N on the head of the M8(L:75mm) screw, glue part O to another M8 nut and screw it onto the other end of
+the screw (<a href="https://drive.google.com/file/d/1UdzVvtWSO6FzaCjtwp5y0qqC_qhxe14q/view?usp=sharing">Figure 23</a>).</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="assemble-flexible-tube"></a><a href="#assemble-flexible-tube" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Assemble flexible tube</h2>
+<ul>
+<li>Insert the bale wire through the black synthetic hose (<a href="https://drive.google.com/file/d/1ytznJ6Dx3ie2Mmk0hXzn9c9g3CHrehi9/view?usp=sharing">Figure 24</a>).</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="final-assembly"></a><a href="#final-assembly" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Final assembly</h2>
+<p>Slip the flexible tube through the different parts in the following order (<a href="https://drive.google.com/file/d/1mdMFzmLQTm70sTvSO2xS2UUelZFA9TRQ/view?usp=sharing">Figure 25</a>):</p>
+<ul>
+<li><p>Right button (RB).
+Part AA.</p></li>
+<li><p>Accept button (AB).
+Part AA.</p></li>
+<li><p>Left button (LB).</p></li>
+<li><p>Then connect the 3.5mm Jack plug.
+Finally, insert parts AB in the ends of the flexible tube (<a href="https://drive.google.com/file/d/1428wQbDjR6KauWpdjf-VbCYKN3hDbRQH/view?usp=sharing">Figure 26</a>).</p></li>
+</ul>
+<h1><a class="anchor" aria-hidden="true" id="blueprints"></a><a href="#blueprints" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Blueprints</h1>
+<p>The technical drawings of the parts to be printed are shown below:</p>
+<p><a href="https://drive.google.com/file/d/1h-aIltuCLblI2W78LPYzlvNGXgW-M7HA/view?usp=sharing">M</a></p>
+<p><a href="https://drive.google.com/file/d/1imSy_1yKplfnwEYDrAsRQntj1dBfBskF/view?usp=sharing">O</a></p>
+<p><a href="https://drive.google.com/file/d/1kkOzZ7JO2MZLPcO1KjxFinN6zsRDZm0u/view?usp=sharing">P</a></p>
+<p><a href="https://drive.google.com/file/d/1LP3YjO9mehvHfq2WQQK3GjY7wqRJR87o/view?usp=sharing">Q</a></p>
+<p><a href="https://drive.google.com/file/d/1YMVOBhYuRTnAS3Xd-2nJuZlQ3G1HnI6-/view?usp=sharing">R</a></p>
+<p><a href="https://drive.google.com/file/d/10RLvbABaNu9vJlZtUGHPG9Q2qrcCFea3/view?usp=sharing">S</a></p>
+<p><a href="https://drive.google.com/file/d/1p0-XZCEUTZ7WnjZa9hsrX5QiP_SQjz_T/view?usp=sharing">T</a></p>
+<p><a href="https://drive.google.com/file/d/1IjCXOyZUJaD7C0t5EFhq3R_xoRD52JDg/view?usp=sharing">U</a></p>
+<p><a href="https://drive.google.com/file/d/1ku8uqe_EzDjduabWlKVjGv6e6Dx1fA9H/view?usp=sharing">V</a></p>
+<p><a href="https://drive.google.com/file/d/1bViPEm1c_L357mzUrjNvdonatj7pPMmm/view?usp=sharing">W</a></p>
+<p><a href="https://drive.google.com/file/d/1_dQ33h2VjdV10Mwi0xnOLqZ7erRofAWJ/view?usp=sharing">X</a></p>
+<p><a href="https://drive.google.com/file/d/1eeuOqx4EJiWxCU11KbM_uZMvs8Tp_VLY/view?usp=sharing">Y</a></p>
+<p><a href="https://drive.google.com/file/d/1hIlxyVn3Vz8g4VswmLNRQKtG-lTH23Hp/view?usp=sharing">Z</a></p>
+<p><a href="https://drive.google.com/file/d/1aKx8SjseYHh3RLbVAavMC9ip8TMVPM0g/view?usp=sharing">AA</a></p>
+<p><a href="https://drive.google.com/file/d/1uGO87a0VeIWkcusnN8bqnCaczfREzEao/view?usp=sharing">AB</a></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/sipAndPuff"><span class="arrow-prev">← </span><span>Sip &amp; Puff switch</span></a><a class="docs-next button" href="/docs/scrollAndPress"><span>Scroll &amp; Press</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#3d-printing">3D Printing</a></li><li><a href="#dismantle-mouse--logitech-m170">Dismantle Mouse  Logitech M170</a></li><li><a href="#assemble-right-button">Assemble Right Button</a></li><li><a href="#assemble-left-button">Assemble Left Button</a></li><li><a href="#assemble-the-c-type-clamp">Assemble the C-type Clamp</a></li><li><a href="#assemble-flexible-tube">Assemble flexible tube</a></li><li><a href="#final-assembly">Final assembly</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/./img/orange_logo.png" alt="OTTAA Project" width="66" height="58"/></a><div><h5>Documentation</h5><a href="/docs/read-me">Readme</a><a href="/docs/welcome">Wiki</a><a href="/docs/contributing">How to Contributing</a></div><div><h5>Community</h5><a href="/users">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/orgs/OTTAA-Project/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div><div><h5>License</h5><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">This work is licensed under a  Creative Commons Attribution 4.0 International License</a>.</div></section><a href="https://www.facebook.com/ottaaproject" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/lines.svg" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2021 OTTAA Project</section></footer></div></body></html>

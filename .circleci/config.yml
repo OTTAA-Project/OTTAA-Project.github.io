@@ -1,0 +1,103 @@
+# If you only want the circle to run on direct commits to master, you can uncomment this out
+# and uncomment the filters: *filter-only-master down below too
+#
+# aliases:
+#  - &filter-only-master
+#    branches:
+#      only:
+#        - master
+
+
+aliases:
+  - &root-yarn
+    |
+      yarn install --non-interactive --cache-folder ~/.cache/yarn
+
+  - &root-restore-yarn-cache
+    keys:
+      - root-yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      # Fallback in case checksum fails
+      - root-yarn-{{ .Branch }}-
+
+  - &root-save-yarn-cache
+    paths:
+      - node_modules
+      - ~/.cache/yarn
+    key: root-yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
+
+  - &v1-yarn
+    |
+      cd v1
+      yarn install --non-interactive --cache-folder ~/.cache/yarn
+
+  - &v1-restore-yarn-cache
+    keys:
+      - v1-yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      # Fallback in case checksum fails
+      - v1-yarn-{{ .Branch }}-
+
+  - &v1-save-yarn-cache
+    paths:
+      - v1/node_modules
+      - ~/.cache/yarn
+    key: v1-yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
+
+  - &v2-yarn
+    |
+      cd v2
+      yarn install --non-interactive --cache-folder ~/.cache/yarn
+
+  - &v2-restore-yarn-cache
+    keys:
+      - v2-yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      # Fallback in case checksum fails
+      - v2-yarn-{{ .Branch }}-
+
+  - &v2-save-yarn-cache
+    paths:
+      - v2/node_modules
+      - ~/.cache/yarn
+    key: v2-yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
+
+  - &filter-only-master
+    branches:
+      only:
+        - master
+
+  - &filter-ignore-gh-pages
+    branches:
+      ignore: gh-pages
+
+defaults: &defaults
+
+version: 2.1
+
+orbs:
+  yarn: itinerisltd/yarn@2.1.1
+  
+jobs:
+  deploy-website:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:10.15.3
+
+    steps:
+      - checkout
+      - run:
+          name: Deploying to GitHub Pages
+          command: |
+            git config --global user.email "ottaa-project@users.noreply.github.com"
+            git config --global user.name "$username"
+            echo "machine github.com login $username password $GITHUBTOKEN	" > ~/.netrc
+            cd website && yarn install && GIT_USER="$username" yarn run publish-gh-pages
+
+workflows:
+  version: 2.1
+  build_and_deploy:
+    jobs:
+     - deploy-website:
+          filters:
+              branches:
+                only:
+                  - production
+#         filters: *filter-only-master
