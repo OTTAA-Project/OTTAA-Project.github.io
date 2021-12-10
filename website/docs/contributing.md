@@ -96,7 +96,7 @@ if(value.toString().equals("Hello")){
 }
 
 ```
-**Remember: **
+**Remember:**
 
 * The attributes of the class must be protected or private
 
@@ -105,7 +105,7 @@ if(value.toString().equals("Hello")){
 * The class must be public or private
 
 ### Naming ###
-** Name:** That must be transparent and representative about the action to show us.
+**Name:** That must be transparent and representative about the action to show us.
 
 **Class:** should be nouns in UpperCamelCase, with the first letter of every word capitalized.
 example :
