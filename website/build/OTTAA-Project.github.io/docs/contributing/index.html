@@ -148,14 +148,14 @@ Switch(value){
 }
 
 </code></pre>
-<p>**Remember: **</p>
+<p><strong>Remember:</strong></p>
 <ul>
 <li><p>The attributes of the class must be protected or private</p></li>
 <li><p>The Method of the class must be public, private or protected</p></li>
 <li><p>The class must be public or private</p></li>
 </ul>
 <h3><a class="anchor" aria-hidden="true" id="naming"></a><a href="#naming" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Naming</h3>
-<p>** Name:** That must be transparent and representative about the action to show us.</p>
+<p><strong>Name:</strong> That must be transparent and representative about the action to show us.</p>
 <p><strong>Class:</strong> should be nouns in UpperCamelCase, with the first letter of every word capitalized.
 example :</p>
 <pre><code class="hljs"><span class="hljs-meta">#!java</span>
@@ -181,13 +181,15 @@ String fileName=<span class="hljs-string">"json.txt"</span>;
 <pre><code class="hljs"><span class="hljs-meta">#!code</span>
 
 index
-├── Edad
+├── Avatar  
+├── Edad           
 ├── email
 ├── Fotos
 |    ├── nombre_foto
 |    └── url_foto
 ├── FotosUsuario
 ├── Frases
+├── FrasesFavoritas
 ├── Grupos
 ├── Juegos
 ├── Pago
@@ -195,6 +197,129 @@ index
 ├── PrimeraUltimaConexion
 ├── Usuarios
 └── Version
+
+</code></pre>
+<ul>
+<li><strong>Avatar :</strong> this is the user icon that represents it</li>
+<li><strong>Edad :</strong>   this is the user age</li>
+<li><strong>email :</strong>    this is the user email</li>
+<li><strong>Fotos :</strong>  this node contains all the user's pictures URL directions</li>
+<li><strong>FotosUsuario:</strong>  this node contains all pictures related to the user</li>
+<li><strong>Frases :</strong> this node contains the user phrases URL</li>
+<li><strong>FrasesFavoritas:</strong> this node contains the user favourite phrases URL</li>
+<li><strong>Grupos:</strong> this node contains the user Group URL</li>
+<li><strong>Juegos:</strong> this node contains the user Game URL</li>
+<li><strong>Pago:</strong> this node contains information about  the kind of user at the application</li>
+<li><strong>Pictos:</strong> this node contains the user Pictograms URL</li>
+<li><strong>PrimeraUltimaConexion:</strong> this node contains the first and last connection from the user</li>
+<li><strong>Usuarios:</strong> this node contains the user information</li>
+<li><strong>Version:</strong>  this node has got the application version.</li>
+</ul>
+<p>The OTTAA Project firebase database node is designed in the next way:</p>
+<p>All nodes have the user id such as a child like the following examples:</p>
+<pre><code class="hljs">Avatar 
+  ├── UserID0 :  defaultAvatarID
+  |
+  └── UserID1
+    ├── name : Picture name
+    └── urlFoto : firebase Storage Picture
+Edad
+  ├── UserID0 :  ADULTO
+  |
+  └── UserID1: JOVEN
+  |
+  └── UserID2: NINO
+
+
+
+email
+  ├── UserID0 :  
+  |     └── email : useremail0@mailexample.com
+  ├── UserID1 :  
+  |     └── email : useremail1@mailexample.com
+  └── UserID2: 
+        └── email : useremail2@mailexample.com
+
+Fotos
+  ├── push0:  
+  |       ├── nombre_foto : name of picture
+  |       └── url_foto : firebase storage url
+  ├── push1:  
+  |       ├── nombre_foto
+  |       └── url_foto
+  ├── push2:  
+  |       ├── nombre_foto
+  |       └── url_foto
+  ├── push3:  
+  |       ├── nombre_foto
+  |       └── url_foto
+  ├── push4:  
+  |       ├── nombre_foto
+  |       └── url_foto
+  ├── push5:  
+  |       ├── nombre_foto
+  |       └── url_foto
+  └──  push6:  
+           ├── nombre_foto
+           └── url_foto
+
+FotosUsuario
+  ├── UserID0:  
+  |       ├── push0 : push0
+  |       └── push3 : push3
+  ├── UserID1:  
+  |       ├── push2
+  |       └── push6
+  └──  UserID2:  
+           ├── push4
+           └── push5
+
+
+Frases
+  ├── UserID0:  
+  |       ├── URL_frases_en : firebase url
+  |       └── URL_frases_es : firebase url
+  └──  UserID2:  
+           └── URL_frases_es: firebase url
+Grupos
+  ├── UserID0:  
+  |       ├── URL_grupos_en : firebase url
+  |       └── URL_grupos_es : firebase url
+  └──  UserID2:  
+           └── URL_grupos_es: firebase url
+Juegos
+  ├── UserID0:  
+  |       ├── URL_juegos_en : firebase url
+  |       └── URL_juegos_es : firebase url
+  └──  UserID2:  
+           └── URL_juegos_es: firebase url
+Pago
+  ├── UserID0:  
+  |       ├── FechaPago : (Date value in long)
+  |       ├── FechaVencimiento : (DateValue in long)
+  |       └── Pago :  1
+  └──  UserID2:  
+           └── Pago:0
+
+Pictos
+  ├── UserID0:  
+  |       ├── URL_pictos_en : firebase url
+  |       └── URL_pictos_es : firebase url
+  └──  UserID2:  
+           └── URL_pictos_es: firebase url
+
+PrimeraUltimaConexion
+  ├── UserID0:  
+  |       ├── Pconexion : (Date in ms)  First time they login
+  |       └── Uconexion : (Date in ms)  Last time they login
+  └──  UserID2:  
+           └── Uconexion: (Date in ms)
+
+Usuarios
+  └─ UserID0:  
+          ├── Nombre :  user name
+          ├── birth_date :  (Date in ms)
+          └── pref_sexo :  user gender (MASCULINO, FEMENINO,Binary , fluid,other)
 </code></pre>
 <h3><a class="anchor" aria-hidden="true" id="how-to-setup-the-files"></a><a href="#how-to-setup-the-files" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>How to setup the files</h3>
 <p>OTTAA Project uses different's apis in order to offer different kinds of functions such as the location in the prediction and the google translate  language that's was implemented with the smart talk function.</p>

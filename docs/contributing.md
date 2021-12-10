@@ -96,7 +96,7 @@ if(value.toString().equals("Hello")){
 }
 
 ```
-**Remember: **
+**Remember:**
 
 * The attributes of the class must be protected or private
 
@@ -105,7 +105,7 @@ if(value.toString().equals("Hello")){
 * The class must be public or private
 
 ### Naming ###
-** Name:** That must be transparent and representative about the action to show us.
+**Name:** That must be transparent and representative about the action to show us.
 
 **Class:** should be nouns in UpperCamelCase, with the first letter of every word capitalized.
 example :
@@ -146,13 +146,15 @@ This is the Three in firebase :
 #!code
 
 index
-├── Edad
+├── Avatar  
+├── Edad           
 ├── email
 ├── Fotos
 |    ├── nombre_foto
 |    └── url_foto
 ├── FotosUsuario
 ├── Frases
+├── FrasesFavoritas
 ├── Grupos
 ├── Juegos
 ├── Pago
@@ -160,7 +162,132 @@ index
 ├── PrimeraUltimaConexion
 ├── Usuarios
 └── Version
+
 ```
+* **Avatar :** this is the user icon that represents it
+* **Edad :**   this is the user age
+* **email :**	 this is the user email	
+* **Fotos :**  this node contains all the user's pictures URL directions
+* **FotosUsuario:**  this node contains all pictures related to the user
+* **Frases :** this node contains the user phrases URL
+* **FrasesFavoritas:** this node contains the user favourite phrases URL
+* **Grupos:** this node contains the user Group URL
+* **Juegos:** this node contains the user Game URL
+* **Pago:** this node contains information about  the kind of user at the application
+* **Pictos:** this node contains the user Pictograms URL
+* **PrimeraUltimaConexion:** this node contains the first and last connection from the user
+* **Usuarios:** this node contains the user information
+* **Version:**  this node has got the application version.
+
+The OTTAA Project firebase database node is designed in the next way:
+
+All nodes have the user id such as a child like the following examples:
+
+    Avatar 
+      ├── UserID0 :  defaultAvatarID
+      |
+      └── UserID1
+		├── name : Picture name
+		└── urlFoto : firebase Storage Picture
+    Edad
+      ├── UserID0 :  ADULTO
+      |
+      └── UserID1: JOVEN
+      |
+      └── UserID2: NINO
+
+
+	
+    email
+      ├── UserID0 :  
+      |     └── email : useremail0@mailexample.com
+      ├── UserID1 :  
+      |     └── email : useremail1@mailexample.com
+      └── UserID2: 
+            └── email : useremail2@mailexample.com
+
+    Fotos
+      ├── push0:  
+      |       ├── nombre_foto : name of picture
+      |       └── url_foto : firebase storage url
+      ├── push1:  
+      |       ├── nombre_foto
+      |       └── url_foto
+      ├── push2:  
+      |       ├── nombre_foto
+      |       └── url_foto
+      ├── push3:  
+      |       ├── nombre_foto
+      |       └── url_foto
+      ├── push4:  
+      |       ├── nombre_foto
+      |       └── url_foto
+      ├── push5:  
+      |       ├── nombre_foto
+      |       └── url_foto
+      └──  push6:  
+               ├── nombre_foto
+               └── url_foto
+
+    FotosUsuario
+      ├── UserID0:  
+      |       ├── push0 : push0
+      |       └── push3 : push3
+      ├── UserID1:  
+      |       ├── push2
+      |       └── push6
+      └──  UserID2:  
+               ├── push4
+               └── push5
+
+
+    Frases
+      ├── UserID0:  
+      |       ├── URL_frases_en : firebase url
+      |       └── URL_frases_es : firebase url
+      └──  UserID2:  
+               └── URL_frases_es: firebase url
+    Grupos
+      ├── UserID0:  
+      |       ├── URL_grupos_en : firebase url
+      |       └── URL_grupos_es : firebase url
+      └──  UserID2:  
+               └── URL_grupos_es: firebase url
+    Juegos
+      ├── UserID0:  
+      |       ├── URL_juegos_en : firebase url
+      |       └── URL_juegos_es : firebase url
+      └──  UserID2:  
+               └── URL_juegos_es: firebase url
+    Pago
+      ├── UserID0:  
+      |       ├── FechaPago : (Date value in long)
+      |       ├── FechaVencimiento : (DateValue in long)
+      |       └── Pago :  1
+      └──  UserID2:  
+               └── Pago:0
+
+    Pictos
+      ├── UserID0:  
+      |       ├── URL_pictos_en : firebase url
+      |       └── URL_pictos_es : firebase url
+      └──  UserID2:  
+               └── URL_pictos_es: firebase url
+
+    PrimeraUltimaConexion
+      ├── UserID0:  
+      |       ├── Pconexion : (Date in ms)  First time they login
+      |       └── Uconexion : (Date in ms)  Last time they login
+      └──  UserID2:  
+               └── Uconexion: (Date in ms)
+
+    Usuarios
+      └─ UserID0:  
+              ├── Nombre :  user name
+              ├── birth_date :  (Date in ms)
+              └── pref_sexo :  user gender (MASCULINO, FEMENINO,Binary , fluid,other)
+    
+	
 
 ### How to setup the files ###
 

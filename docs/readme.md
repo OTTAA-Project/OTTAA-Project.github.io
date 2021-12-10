@@ -42,6 +42,8 @@ You can be part of this life-changer tech, join us in this social impact open so
 
   >* [Android Support Library](https://developer.android.com) - Google's Support Library
 
+  >* [Android Image Cropper](https://github.com/CanHub/Android-Image-Cropper) - Can Hub Android Image Cropper
+
 ### Tools Needed
 
 

@@ -24,13 +24,15 @@ title: Resources
  >* [SimpleNlg](https://github.com/simplenlg/simplenlg) - Natural Language Processing
 
  >* [Android Support Library](https://developer.android.com) - Google's Support Library
+ 
+ >* [Android Image Cropper](https://github.com/CanHub/Android-Image-Cropper) - Can Hub Android Image Cropper
 
 # Tools Needed #
 
 
 Official Android developer tools
 
- ![Android Studio](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/64px-Android_Studio_icon.svg.png)
+ ![Android Studio](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Android_Studio_Trademark.svg/128px-Android_Studio_Trademark.svg.png)
    [Android Studio](https://developer.android.com/studio)
 
 Repository
