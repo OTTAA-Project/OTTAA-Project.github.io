@@ -20,6 +20,9 @@
       "pressAndPress": {
         "title": "Press And Press"
       },
+      "privacypolicy": {
+        "title": "Privacy Policy"
+      },
       "read-me": {
         "title": "Readme"
       },
@@ -31,6 +34,9 @@
       },
       "sipAndPuff": {
         "title": "Sip & Puff switch"
+      },
+      "techno": {
+        "title": "Technology Standards."
       },
       "video1": {
         "title": "video1"
