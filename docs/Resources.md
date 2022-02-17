@@ -24,6 +24,8 @@ title: Resources
  >* [SimpleNlg](https://github.com/simplenlg/simplenlg) - Natural Language Processing
 
  >* [Android Support Library](https://developer.android.com) - Google's Support Library
+
+ >* [Firebase](https://firebase.google.com) - Firebase
  
  >* [Android Image Cropper](https://github.com/CanHub/Android-Image-Cropper) - Can Hub Android Image Cropper
 
