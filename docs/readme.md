@@ -21,6 +21,7 @@ You can be part of this life-changer tech, join us in this social impact open so
 ## Web Page
  * [Web Page](https://ottaaproject.com)
 
+
 ## Resources
 
 ### Libraries
@@ -75,6 +76,10 @@ You can be part of this life-changer tech, join us in this social impact open so
 
 ## Documentation
  * [Documentation](https://ottaaproject.com/javadoc)
+
+## Components Architecture
+
+![Architecture](../img/architecture.png)
 
 
 # Information
@@ -174,7 +179,7 @@ if(value.toString().equals("Hello")){
 }
 
 ```
-**Remember: **
+**Remember:**
 
 * The attributes of the class must be protected or private
 
@@ -183,7 +188,7 @@ if(value.toString().equals("Hello")){
 * The class must be public or private
 
 ### Naming ###
-** Name:** That must be transparent and representative about the action to show us.
+**Name:** That must be transparent and representative about the action to show us.
 
 **Class:** should be nouns in UpperCamelCase, with the first letter of every word capitalized.
 example :
@@ -245,9 +250,9 @@ index
 
 In order to work in the  OTTAA Project in a collaborative way and help our community grow we ask you to comply with the following code of conduct..
 
-** Diversity makes us  grow : **  We truly believe that every user’s or developer’s age, gender, nationality, race or sexual orientation provide content based on a plurality of experiences and knowledge that contribute to the construction of a complete tool which reflects the real needs of potential users of the OTTAA Project.
+**Diversity makes us  grow :**  We truly believe that every user’s or developer’s age, gender, nationality, race or sexual orientation provide content based on a plurality of experiences and knowledge that contribute to the construction of a complete tool which reflects the real needs of potential users of the OTTAA Project.
 
-** Debate enriches us : ** As we consider that everyone can  contribute significantly to improving the software we seek to establish mutual respect among the members of the community, reaching a consensus among the developers and solving the problem in the best way possible.
+**Debate enriches us :** As we consider that everyone can  contribute significantly to improving the software we seek to establish mutual respect among the members of the community, reaching a consensus among the developers and solving the problem in the best way possible.
 
 It is necessary to comply with the following  guidelines in our conduct code:
 
