@@ -47,22 +47,22 @@ You can be part of this life-changer tech, join us in this social impact open so
 ### Tools Needed
 
 
- Official Android developer tools
+ **Official Android developer tools**
 
   ![Android Studio](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/64px-Android_Studio_icon.svg.png)
     [Android Studio](https://developer.android.com/studio)
 
- Repository
+ **Repository**
 
    ![Bitbucket](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bitbucket-blue-logomark-only.svg/64px-Bitbucket-blue-logomark-only.svg.png)
   [Bitbucket](https://bitbucket.org)
 
- Pictograms
+ **Pictograms**
 
    ![Arasaac](https://avatars2.githubusercontent.com/u/10613455?s=200&v=4)
   [Araasac](http://arasaac.org/)
 
- Testing Platform
+ **Testing Platform**
 
    ![Testproject](https://blog.testproject.io/wp-content/themes/testprojectblog/img/t-plogo.png)
     [Testproject](http://testproject.io)

@@ -1,7 +1,7 @@
 {
   "docs": {
     "Readme":["read-me"],
-    "Documentation": ["welcome","Resources","analytics"]
+    "Documentation": ["welcome","Resources","analytics","privacypolicy","techno"]
     ,"Accessibility":["sipAndPuff","wormAccessible","scrollAndPress","pressAndPress"]
     ,"Information":["contributing","codeofconduct"]
   }

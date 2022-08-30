@@ -11,16 +11,19 @@
       "analytics": {
         "title": "Analytics Implementation"
       },
-      "codeofconduct": {
+      "Code-of-Conduct": {
         "title": "Code Of Conduct"
       },
-      "contributing": {
+      "Contributing": {
         "title": "Contributing"
       },
       "pressAndPress": {
         "title": "Press And Press"
       },
-      "read-me": {
+      "privacypolicy": {
+        "title": "Privacy Policy"
+      },
+      "Readme": {
         "title": "Readme"
       },
       "Resources": {
@@ -31,6 +34,9 @@
       },
       "sipAndPuff": {
         "title": "Sip & Puff switch"
+      },
+      "techno": {
+        "title": "Technology Standards."
       },
       "video1": {
         "title": "video1"

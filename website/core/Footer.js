@@ -31,11 +31,11 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Documentation</h5>
-            <a href={this.docUrl('read-me')}>
+            <a href={this.docUrl('Readme')}>
                 Readme
             </a>
             <a href={this.docUrl('welcome')}>Wiki</a>
-            <a href={this.docUrl('contributing')}>
+            <a href={this.docUrl('Contributing')}>
               How to Contributing
             </a>
           </div>

@@ -1,5 +1,5 @@
 ---
-id: read-me
+id: Readme
 title: Readme
 ---
 ![image](https://ottaaproject.com/img/ottaa-project.svg)
@@ -21,6 +21,7 @@ You can be part of this life-changer tech, join us in this social impact open so
 ## Web Page
  * [Web Page](https://ottaaproject.com)
 
+
 ## Resources
 
 ### Libraries
@@ -41,28 +42,30 @@ You can be part of this life-changer tech, join us in this social impact open so
   >* [SimpleNlg](https://github.com/simplenlg/simplenlg) - Natural Language Processing
 
   >* [Android Support Library](https://developer.android.com) - Google's Support Library
+  
+  >* [Firebase](https://firebase.google.com) - Firebase
 
   >* [Android Image Cropper](https://github.com/CanHub/Android-Image-Cropper) - Can Hub Android Image Cropper
 
 ### Tools Needed
 
 
- Official Android developer tools
+ **Official Android developer tools**
 
   ![Android Studio](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Android_Studio_Trademark.svg/128px-Android_Studio_Trademark.svg.png)
     [Android Studio](https://developer.android.com/studio)
 
- Repository
+ **Repository**
 
-   ![Bitbucket](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bitbucket-blue-logomark-only.svg/64px-Bitbucket-blue-logomark-only.svg.png)
-  [Bitbucket](https://bitbucket.org)
+   ![Github](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/64px-Octicons-mark-github.svg.png)
+  [Github](https://github.com)
 
- Pictograms
+ **Pictograms**
 
    ![Arasaac](https://avatars2.githubusercontent.com/u/10613455?s=200&v=4)
   [Araasac](http://arasaac.org/)
 
- Testing Platform
+ **Testing Platform**
 
    ![Testproject](https://blog.testproject.io/wp-content/themes/testprojectblog/img/t-plogo.png)
     [Testproject](http://testproject.io)
@@ -74,124 +77,9 @@ You can be part of this life-changer tech, join us in this social impact open so
 ## Documentation
  * [Documentation](https://ottaaproject.com/javadoc)
 
-## Analytics Implementation
+## Components Architecture
 
-### Kind of events
-* **Talk**  *-Interaction Event*
-* **Erase** *- Event-related with Erase action*
-* **Delete** *- Event-related with Delete a pictogram or group*
-* **Accessibility** *- Event-related with accessibility*
-* **Settings**   *- Event-related with setting action*
-* **Pictograms** *- Event-related with action add or edit about a pictogram or group*
-
-### List of events
-
-#### Erase Event
-
-| Class     | Action | Name of Event |
-|-----------|--------|---------------|
-| Principal | Borrar | Borrar        |
-
-#### Talk Events
-
-| Screen    | Action                      | Name of Event    |
-|-----------|-----------------------------|--------------------|
-| Principal | Hablar                      | Phrase Without NLG |
-| Principal | Hablar Y Borrar             | Talk and Erase     |
-| Principal | Hablar en Modo Experimental | Phrase With NLG    |
-
-#### Accessibility
-| Screen         | Action                                  | Name of Event                |
-|----------------|-----------------------------------------|-------------------------------|
-| Principal      | Hablar Con Dispositivo de accesibilidad | Talk with accesibility device |
-| Principal      | Hablar Con Barrido de Pantalla          | Talk with Screen Scanning     |
-| Principal      | Galeria Grupos                          | Group Galery                  |
-| Galeria Grupos | Boton de Accion                         | Select Group                  |
-| Galeria Grupos | Boton de Anterior                       | Previous Button               |
-| Galeria Grupos | Boton de siguiente                      | Next Button                   |
-| Galeria Grupos | Boton de Salir                          | Close Galery Groups           |
-| Galeria Pictos | Editar Pictogramas                      | Edit Pictograms               |
-| Galeria Pictos | Boton de Anterior                       | Previous Button               |
-| Galeria Pictos | Boton de Siguiente                      | Backpress Button              |
-
-#### Pictograms
-
-| Screen        | Action                   | Name of Event                           |
-|---------------|--------------------------|------------------------------------------|
-| Editar Grupos | Asignar Tags             | Hour Tag, Location Tag,GenderTag,Age Tag |
-| Editar Grupos | Agregar Pictograma Nuevo | Add Pictogram                            |
-| Editar Grupos | Editar Pictograma        | Edit Pictogram                           |
-| Editar Grupos | Agregar Grupo Nuevo      | Add Group                                |
-| Editar Grupos | Editar Grupo             | Edit Group                               |
-
-
-#### Settings
-
-| Screen           | Action                      | Name of Event        |
-|------------------|-----------------------------|-----------------------|
-| Unir Pictogramas | Activar/Desactivar Repetir  | Mute                  |
-| Pictogramas      | EditarPictogramas           | Edit Pictograms       |
-| Pictogramas      | Tiempo entre clicks         | Time Between Clicks   |
-| Pictogramas      | Hablar y borrar             | Talk and erase        |
-| Prediccion       | Ubicacion                   | Location              |
-| Prediccion       | Pictos Sugeridos            | Suggested Pictograms  |
-| Prediccion       | Edad                        | Age User              |
-| Prediccion       | Genero                      | Gender User           |
-| Accesibilidad    | Mano Habil                  | Skill hand            |
-| Accesibilidad    | Barrido de pantalla         | Screen Scanning       |
-| Accesibilidad    | Velocidad de Barrido        | Screen Scanning Speed |
-| Accesibilidad    | Velocidad del Scroll        | Scroll Speed          |
-| Accesibilidad    | Orientacion del Joystick    | Joystick              |
-| Accesibilidad    | Control Facial              | Facial Control        |
-| Voz Y Subtitulo  | Habilitar TTS Personalizado | Custom TTS            |
-| Voz Y Subtitulo  | Subtitulo Personalizado     | Custom Subtitle       |
-| Idioma           | Selecciona un idioma        | Language              |
-| Idioma           | OTTAA Labs                  | Experimental Mode     |
-
-#### Touch
-| Screen           | Action                               | Name of Event             |
-|------------------|--------------------------------------|----------------------------|
-| Principal        | Frases Mas Usadas                    | More Used Phrases          |
-| Principal        | Compartir Frases                     | Share Phrases              |
-| Principal        | Cargar Opciones                      | More Options               |
-| Principal        | Silenciar                            | Silence                    |
-| Principal        | Ubicacion                            | Location                   |
-| Principal        | Galeria Grupos                       | Group Galery               |
-| Principal        | Agregar Relacion                     | add Pictogram              |
-| Principal        | Eliminar Relacion                    | Delete Pictogram           |
-| Principal        | Editar Pictograma                    | Edit Pictogram             |
-| Principal        | Entrar a Configuracion               | settings                   |
-| Principal        | Entrar al informe                    | Report                     |
-| Principal        | Entrar al Acerca de                  | About That                 |
-| Principal        | Cerrar Sesion                        | LogOut                     |
-| Galeria Grupos   | Agregar Grupo                        | Add Group                  |
-| Galeria Grupos   | Bajar Pictogramas                    | Download Pictograms        |
-| Galeria Grupos   | Ordenar Grupos                       | Sort Groups                |
-| Galeria Grupos   | Editar Grupo                         | Edit Group                 |
-| Galeria Grupos   | Eliminar Grupo                       | Delete Group               |
-| Editar Grupos    | Probar Texto en voz alta             | Say Pictogram Name         |
-| Editar Grupos    | Agregar Imagen                       | Select Custom Picto Image  |
-| Editar Grupos    | Seleccionar Categoria del pictograma | Select Pictograms Category |
-| Galeria Pictos   | Agregar Pictogramas                  | Add Pictograms             |
-| Galeria Pictos   | Editar Pictogramas                   | Edit Pictograms            |
-| Galeria Pictos   | Vincular Pictogramas                 | Vinculate Pictograms       |
-| Galeria Pictos   | Buscar Pictograma                    | Search Pictogram           |
-| Galeria Pictos   | Eliminar Pictograma                  | Delete Pictograms          |
-| Galeria Pictos   | Boton de Anterior                    | Foward Button              |
-| Galeria Pictos   | Boton de Siguiente                   | Next Button                |
-| Galeria Pictos   | Boton Salir                          | Backpress Button           |
-| Galeria Pictos   | Seleccionar Un pictograma            | Select Pictogram           |
-| Galeria Pictos   | Ordenar Pictogramas del grupo        | Sort Pictograms            |
-| Vincular         | Guardar Pictogramas vinculados       | Vinculate child            |
-| Juegos           | Uso del boton Siguiente              | Next Button                |
-| Juegos           | Uso del boton Anterior               | Previous Button            |
-| Juegos           | Uso del Boton de Accion              | Select Game                |
-| Unir Pictogramas | Boton Score                          | Score Dialog               |
-| Unir Pictogramas | Activar/Desactivar Ayuda             | Help Action                |
-| Unir Pictogramas | Activar/Desactivar Repetir           | Mute                       |
-| Cual es el picto | BotonScore                           | Score Dialog               |
-| Cual es el picto | Activar/Desactivar Ayuda             | Help Action                |
-| Cual es el picto | Silenciar Cancion                    | Mute                       |
+![Architecture](../img/architecture.png)
 
 
 # Information
@@ -291,7 +179,7 @@ if(value.toString().equals("Hello")){
 }
 
 ```
-**Remember: **
+**Remember:**
 
 * The attributes of the class must be protected or private
 
@@ -300,7 +188,7 @@ if(value.toString().equals("Hello")){
 * The class must be public or private
 
 ### Naming ###
-** Name:** That must be transparent and representative about the action to show us.
+**Name:** That must be transparent and representative about the action to show us.
 
 **Class:** should be nouns in UpperCamelCase, with the first letter of every word capitalized.
 example :
@@ -362,9 +250,9 @@ index
 
 In order to work in the  OTTAA Project in a collaborative way and help our community grow we ask you to comply with the following code of conduct..
 
-** Diversity makes us  grow : **  We truly believe that every user’s or developer’s age, gender, nationality, race or sexual orientation provide content based on a plurality of experiences and knowledge that contribute to the construction of a complete tool which reflects the real needs of potential users of the OTTAA Project.
+**Diversity makes us  grow :**  We truly believe that every user’s or developer’s age, gender, nationality, race or sexual orientation provide content based on a plurality of experiences and knowledge that contribute to the construction of a complete tool which reflects the real needs of potential users of the OTTAA Project.
 
-** Debate enriches us : ** As we consider that everyone can  contribute significantly to improving the software we seek to establish mutual respect among the members of the community, reaching a consensus among the developers and solving the problem in the best way possible.
+**Debate enriches us :** As we consider that everyone can  contribute significantly to improving the software we seek to establish mutual respect among the members of the community, reaching a consensus among the developers and solving the problem in the best way possible.
 
 It is necessary to comply with the following  guidelines in our conduct code:
 

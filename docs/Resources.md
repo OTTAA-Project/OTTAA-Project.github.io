@@ -24,28 +24,30 @@ title: Resources
  >* [SimpleNlg](https://github.com/simplenlg/simplenlg) - Natural Language Processing
 
  >* [Android Support Library](https://developer.android.com) - Google's Support Library
+
+ >* [Firebase](https://firebase.google.com) - Firebase
  
  >* [Android Image Cropper](https://github.com/CanHub/Android-Image-Cropper) - Can Hub Android Image Cropper
 
 # Tools Needed #
 
 
-Official Android developer tools
+**Official Android developer tools**
 
  ![Android Studio](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Android_Studio_Trademark.svg/128px-Android_Studio_Trademark.svg.png)
    [Android Studio](https://developer.android.com/studio)
 
-Repository
+**Repository**
 
-  ![Bitbucket](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Bitbucket-blue-logomark-only.svg/64px-Bitbucket-blue-logomark-only.svg.png)
- [Bitbucket](https://bitbucket.org)
+  ![GitHub](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/64px-Octicons-mark-github.svg.png)
+ [GitHub](https://github.com)
 
-Pictograms 
+**Pictograms** 
 
   ![Arasaac](https://avatars2.githubusercontent.com/u/10613455?s=200&v=4) 
  [Araasac](http://arasaac.org/)
 
-Testing Platform
+**Testing Platform**
 
   ![Testproject](https://blog.testproject.io/wp-content/themes/testprojectblog/img/t-plogo.png)
    [Testproject](http://testproject.io)
