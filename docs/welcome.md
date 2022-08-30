@@ -30,7 +30,7 @@ You can be part of this life-changer tech, join us in this social impact open so
 
  * [Analytics Implementation](./AnalyticsImplementation.md)
 
- * [OTTAA Accessibility Suite](./Accessibility-devices)
+ * [OTTAA Accessibility Suite](./accesibility-suite)
 
 ### Information ###
 

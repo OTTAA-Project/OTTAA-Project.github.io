@@ -1,5 +1,5 @@
 ---
-id: contributing
+id: Contributing
 title: Contributing
 ---
 ![picture](https://ottaaproject.com/img/ottaa-project.svg)

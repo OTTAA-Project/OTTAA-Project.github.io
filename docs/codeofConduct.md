@@ -1,5 +1,5 @@
 ---
-id: codeofconduct
+id: Code-of-Conduct
 title: Code Of Conduct
 ---
 ![logo](https://ottaaproject.com/img/ottaa-project.svg)
