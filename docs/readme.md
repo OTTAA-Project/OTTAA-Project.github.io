@@ -4,291 +4,128 @@ title: Readme
 ---
 ![image](https://ottaaproject.com/img/ottaa-project.svg)
 
-# Welcome to OTTAA Project wiki #
+| [![Digital public good](../img/dpg-badge.png)](https://digitalpublicgoods.net/registry/) |
+[![Crowdin](https://badges.crowdin.net/ottaa-project/localized.svg)](https://crowdin.com/project/ottaa-project) |
+[![Codemagic build status](https://api.codemagic.io/apps/633ae2406e6d53fd76823f7f/633ae2406e6d53fd76823f7e/status_badge.svg)](https://codemagic.io/apps/633ae2406e6d53fd76823f7f/633ae2406e6d53fd76823f7e/latest_build) |
+|----|----|----|
+# Welcome to the OTTAA Project #
 
+The [OTTAA Project](https://www.ottaaproject.com/) is an augmentative and alternative communication (AAC) mobile application intended for users with speech and language impairments. It is a fast and effective tool that significantly improves users' quality of life and facilitates their social and labor reintegration. We have already positively impacted the lives of more than 40000 people in 11 countries, helping individuals with cerebral palsy, aphasia, autism, Down syndrome, and mild ALS.
 
+You can be a part of this open-source project and help build life-changing technology, join us!
 
-OTTAA Project is an Alternative Augmentative Communication System, intended for people with speech impairments. It is a mobile, fast and effective tool that significantly improves the quality of life and facilitates social and labor integration.
+<p align="center">
+<img src="/public/images/ottaa_project/usar_ottaa.gif" alt="ottaa_img" width="500"/>
+</p>
 
-We had already improved more than 40000 people lifestyle in 11 countries, our App helps people with Cerebral Palsy, Aphasia, Autism, Down Syndrome & mild ALS.
-You can be part of this life-changer tech, join us in this social impact open source project.
+Read our [Project's Roadmap](https://github.com/orgs/OTTAA-Project/projects/4/views/1) to learn about what features we are currently working on, what stage they are in, and when we expect to deliver them to you. 
 
+## How does it work?
 
-[![](http://img.youtube.com/vi/zAL7yWxc-gU/0.jpg)](http://www.youtube.com/watch?v=zAL7yWxc-gU "Video")
+The OTTA app facilitates human communication via pictograms for those who are speech impaired, suggesting to each user the most appropriate pictograms based on preference, need, and environment. Watch this video for a more comprehensive walkthrough. 
 
-# Project Info #
+<p align="center">
+<a href="https://www.youtube.com/watch?v=nQZRzBOWD-c"><img src="https://img.youtube.com/vi/nQZRzBOWD-c/0.jpg" alt="OTTAA The first intelligent communication platform for speech impaired people" width="480" height="360"></a>
+</p>
 
-## Web Page
- * [Web Page](https://ottaaproject.com)
+## Getting started: setting up your IDE for the first time
+
+* Run `flutter pub get` to get the dependencies.
+* Run `flutter pub run build_runner build` to generate the model class code.
+* Run `flutter run` to run the project.
+
+\* In case you encounter any errors in model building:
+
+* Run `flutter packages pub run build_runner build --delete-conflicting-outputs`.
 
 
 ## Resources
 
-### Libraries
-   The libraries used are:
-
-  >* [volley](https://github.com/google/volley) - Network Requests
-
-  >* [Android-RateThisApp](https://github.com/kobakei/Android-RateThisApp) - App Rating
-
-  >* [lottie-android](https://github.com/airbnb/lottie-android) - Dynamic animations
-
-  >* [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) - Graphic Reports
-
-  >* [Glide](https://github.com/bumptech/glide) - Loading Images
-
-  >* [Lightweight-Stream-API](https://github.com/aNNiMON/Lightweight-Stream-API/blob/master/LICENSE) Java 7 lamba implementation
-
-  >* [SimpleNlg](https://github.com/simplenlg/simplenlg) - Natural Language Processing
-
-  >* [Android Support Library](https://developer.android.com) - Google's Support Library
-  
-  >* [Firebase](https://firebase.google.com) - Firebase
-
-  >* [Android Image Cropper](https://github.com/CanHub/Android-Image-Cropper) - Can Hub Android Image Cropper
-
-### Tools Needed
+### Libraries & tools
 
 
- **Official Android developer tools**
+The OTTAA Project was developed and runs mainly on:
 
-  ![Android Studio](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Android_Studio_Trademark.svg/128px-Android_Studio_Trademark.svg.png)
-    [Android Studio](https://developer.android.com/studio)
+* [Flutter](https://flutter.dev/) 
 
- **Repository**
-
-   ![Github](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/64px-Octicons-mark-github.svg.png)
-  [Github](https://github.com)
-
- **Pictograms**
-
-   ![Arasaac](https://avatars2.githubusercontent.com/u/10613455?s=200&v=4)
-  [Araasac](http://arasaac.org/)
-
- **Testing Platform**
-
-   ![Testproject](https://blog.testproject.io/wp-content/themes/testprojectblog/img/t-plogo.png)
-    [Testproject](http://testproject.io)
-
-   ![CircleCi](https://avatars.githubusercontent.com/u/1231870?s=100&v=4)
-    [CircleCi](http://app.circleci.com/)
+* [Firebase](https://firebase.google.com/) 
 
 
-## Documentation
- * [Documentation](https://ottaaproject.com/javadoc)
-
-## Components Architecture
-
-![Architecture](../img/architecture.png)
+The complete list of libraries used and their functions can be found [here](libraries.md).
 
 
-# Information
+### Tools
+
+* Official Android developer tools
+
+<img src="/public/images/tools_libraries/android_studio" alt="android_dev" width="40" height="40"/> [Android Studio](https://developer.android.com/studio)
+
+* Repository
+
+<img src="/public/images/tools_libraries/bit_bucket.png" alt="bit_bucket" width="40" height="40"/> [Bitbucket](https://bitbucket.org)
+
+* Pictograms
+
+<img src="/public/images/tools_libraries/ARASAAC_titulo.png" alt="araasac" width="50" height="50"/> [Arasaac](http://arasaac.org/)
+
+* Testing Platform
+
+<img src="/public/images/tools_libraries/test_project.png" alt="test_platform" width="40" height="40"/> [Testproject](http://testproject.io)
+
+
+### API reference
+
+ * We are using [Dartdoc](https://pub.dev/packages/dartdoc) to automate the [API reference documentation] (place_holder: link to API reference). For some help getting started with Dartdoc, check out [this guide](/dartdoc_automatic_documentation.md) we put together.  
 
 ## Contributing
 
-### How to contribute
-We would love your help. Before you start working however, please read and follow this guide.
+Contributors help the OTTAA Project grow. If you would like to become a contributor, please read [Contributing](CONTRIBUTING.md).
 
-#### Reporting Issues
+## Technology Standards
 
-Provide a lot of information about the bug. Mention the version of OTTAA Project and explain how the problem can be reproduced.
+Open standards establish protocols and building blocks to help make digital public goods more functional and interoperable. This not only streamlines product development but also removes vendor-imposed boundaries to read or write data files by improving data exchange and open-source development support that is why we use the following Technology standards across our software and implementations.
 
-### Code Contributions
+* HTTPS for secure communication over networks
+* OAuth 2 for authentication and user authorization
+* UTF-8 for string localization and internalization
+* JSON for database structure and data transfer
+* PNG & Webp for images and pictograms
+* OGG for audio files
 
+## FAQ
 
+We have compiled a list of FAQs, you can check it [here](place_holder: link to FAQs once posted in [web](https://ottaa-project.github.io/docs/welcome))
 
-#### Create a pull request
-In order to create a pull request is necessary
-
-* Avoid file conflicts with the source code
-* Should make a description about the characteristics to apply
-* Should apply the pull request in the corresponding branch
-
-|Branch|Description|
-|---|---|
-|Version| Main |
-|Feature| Add new features |
-|Hotfix|  Hot-fix about a version|
-|Bugfix|  Bug-fix about a version|
+## Acknowledgments
 
 
+<p float="left">
+ <a href="https://globalsymbols.com/"><img src="/public/images/global_symbols.png" width="150" hspace="20"></a>
+ <a href="http://arasaac.org/"><img src="/public/images/tools_libraries/ARASAAC_titulo.png" width="150"></a>
+</p>
 
-### Documentation
-#### Comments
-* Comment documenting the source code are required.
+## Sponsors
 
-* Comment a class explaining the purpose of that and how to implements if that required.
+Thank you to our current sponsors!
 
-* Comment should be formatted as proper English sentences.
-* use Javadoc documentation.
+<p float="left">
+ <a href="https://www.unicef.org/"><img src="/public/images/sponsors/UNICEF_logo_2016.png" width="200"></a>
+ <a href="https://startupchile.org/en/"><img src="/public/images/sponsors/startup_chile.jpg" width="200"></a>
+ <a href="https://www.expo2020dubai.com/en"><img src="/public/images/sponsors/EXPO_2020_Dubai_logo.png" width="200" width="200"></a>
+ <a href="https://katapult.vc/startups/accelerators/"><img src="/public/images/sponsors/katapult_accelerator.png" width="200"></a>
 
-### Code
+</p>
 
-#### Duplication
-* Don't copy-paste source code. Reuse it.
+Support this project by [becoming a sponsor](https://www.ottaaproject.com/support-ottaa-project.php).
 
-#### Import Libraries
+## :memo: Legal & Licenses
 
-* Sort by category.
+* Code - GPLv3
+* ARASAAC Symbols - CC BY-NC-SA 4.0
+* Global Symbols CIC - CC BY-NC-SA 4.0
+* OTTAA Project™ 2016 - 2022
 
-|Category|Description|
-|--------|-----------|
-| Google | Library related to google |
-| Android | Library related to android |
-|Firebase | Library related to firebase api|
-|Test |Library related to test app|
-| Library | Library related to different apps|
-
-* Sort by alphabetical order.
-
-* Use Grandle level app
- Example :
-```
-#!xml
-dependencies {
-   implementation 'library'
-}
-```
-#### Indentation
-
-
- Switch case
-```
-#!java
-Align by  such as these cases :
-
-Switch(value){
-    case 0:
-       // Todo action here
-    break;
-    Default:
-       // Todo default action here
-    break;
-}
-```
-If / else or else if
-```
-#!java
-
-if(value.toString().equals("Hello")){
-  //To do action here
-}else if{
-  // To do action here
-} else{
-  // Todo
-}
-
-```
-**Remember:**
-
-* The attributes of the class must be protected or private
-
-* The Method of the class must be public, private or protected
-
-* The class must be public or private
-
-### Naming ###
-**Name:** That must be transparent and representative about the action to show us.
-
-**Class:** should be nouns in UpperCamelCase, with the first letter of every word capitalized.
-example :
-
-```
-#!java
-public class Json(){
-
-}
-```
-**variable:** 	Local variables, instance variables, and class variables are also written in lowerCamelCase.
-
-example :
-
-```
-#!java
-
-String name =" Carl";
-String fileName="json.txt";
-```
-
-**Constant:** Constants should be written in uppercase characters separated by underscores.
-
-example :
-
-
-```
-#!java
-
-public static final String CONSTANT_NAME=" fileName.txt";
-```
-
-#### Firebase index:
-
-This is the Three in firebase :
-
-```
-#!code
-
-index
-├── Edad
-├── email
-├── Fotos
-|    ├── nombre_foto
-|    └── url_foto
-├── FotosUsuario
-├── Frases
-├── Grupos
-├── Juegos
-├── Pago
-├── Pictos
-├── PrimeraUltimaConexion
-└── Usuarios
-```
-
-## Code of Conduct
-
-### OTTAA Project Open Source Code of Conduct
-
-In order to work in the  OTTAA Project in a collaborative way and help our community grow we ask you to comply with the following code of conduct..
-
-**Diversity makes us  grow :**  We truly believe that every user’s or developer’s age, gender, nationality, race or sexual orientation provide content based on a plurality of experiences and knowledge that contribute to the construction of a complete tool which reflects the real needs of potential users of the OTTAA Project.
-
-**Debate enriches us :** As we consider that everyone can  contribute significantly to improving the software we seek to establish mutual respect among the members of the community, reaching a consensus among the developers and solving the problem in the best way possible.
-
-It is necessary to comply with the following  guidelines in our conduct code:
-
-* **Refraining from discriminating .**
-* **Avoiding posting pornographic content.**
-* **Refraining from publishing the user’s details or relevant  information.**
-* **Refraining from making  heavy jokes.**
-* **Avoiding insults**
-* **Refraining from judging others on there religions or race**
-
-### Reporting breaches to the code of conduct
-
-In the case of any violation of our code of conduct, it should be reported as follows:
-Share your contact details
-
-* **Send a screenshot of the situation**
-* **Explain the situation in as much detail as possible**
-* **Send the email to the following address : support@ottaaproject.com**
-
-After the  revision of the report, the team assigned to analyze the case will carry out the following actions:
-
-* **Notify the user of the breach**
-* **devise a way for the user to amend that attitude.**
-
-the user can be expelled from the community in the following situation :
-
-* **Repeated conduct**
-* **Posting of pornographic content**
-
-# Testing
-
-## Master [![CircleCI](https://circleci.com/gh/OTTAA-Project/OTTAAProject/tree/master.svg?style=svg)](https://circleci.com/gh/OTTAA-Project/OTTAAProject/?master)
-
-## Dev [![CircleCI](https://circleci.com/gh/OTTAA-Project/OTTAAProject/tree/dev.svg?style=svg)](https://circleci.com/gh/OTTAA-Project/OTTAAProject/?dev)
-
-
+OTTAA's brand assets, texts, logos, icons, designs, names of other OTTAA software, and any other brand features and elements, whether registered or unregistered (“Brand Assets”)—are proprietary assets owned exclusively by OTTAA and its group of companies.
 
 
 
