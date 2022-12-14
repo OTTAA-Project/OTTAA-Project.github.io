@@ -1,0 +1,32 @@
+.features {
+  display: flex;
+  padding: 2rem 0;
+  width: 100%;
+  background-color: bisque;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+.featureImage {
+  height: 200px;
+  width: 320px;
+  text-align: left;
+}
+
+.featureTitle{
+  text-align: center;
+  margin-top: 0px;
+
+}
+.featureText{
+  text-align: justify;
+  margin-top: 0px;
+  height: 200px;
+
+}
+.featureTable{
+  border-color: bisque;
+  border-width: 0px;
+}

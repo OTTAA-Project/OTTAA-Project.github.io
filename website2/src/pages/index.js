@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageDescription';
+import HomepageBlocks from '@site/src/components/HomepageBlocks';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -174,7 +175,7 @@ export default function Home() {
         <HomepageFeatures />
       </main>
       <center>
-      <LeaderShipGovernance/>
+      <HomepageBlocks/>
       </center>
           {/* 
           <TutorialDescription1 />
