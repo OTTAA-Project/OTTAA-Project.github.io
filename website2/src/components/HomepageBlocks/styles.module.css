@@ -10,20 +10,20 @@
   width: 200px;
 }
 .featureImage {
-  height: 200px;
-  width: 320px;
+  max-width: 40%;
+  max-height: 40%;
   text-align: left;
+  margin-block-end: 10px;
 }
 
 .featureTitle{
-  text-align: center;
-  margin-top: 0px;
-
-
+  text-align: start;
+  width: 50%;
 }
 .featureText{
   text-align: start;
   margin-top: 0px;
+  width: 80%;
 }
 .featureTable{
   border-color: bisque;
@@ -46,6 +46,7 @@
   margin-right: 10px;
   display: inline-flex;
 }
-h2 {
+
+h2{
   color: orangered;
 }

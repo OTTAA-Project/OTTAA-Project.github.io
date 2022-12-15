@@ -37,7 +37,7 @@ function Feature({value,title, description}) {
       <p  className={styles.featureText}>{description}</p>
      </div>
      <div className={styles.featureRight}> 
-    <img  className={styles.featureImage}src={value}/>
+    <img src={value}/>
   </div></div>
     
   );
