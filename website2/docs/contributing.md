@@ -1,0 +1,297 @@
+---
+id: Contributing
+title: Contributing
+sidebar_position: 2
+custom_edit_url: null
+---
+# Contributing to the OTTAA Project
+
+We would love your help with the OTTAA Project. We have compiled this useful guide to all the ways you can collaborate. Reading it carefully before you start is important to maintain consistency in the project quality and ensure a respectful and positive environment in our community.
+
+## Table of contents
+
+<div id="toc_container">
+<p class="toc_title">Contents</p>
+
+1. [Ways of contributing](#ways-of-contributing)
+1. [As a developer](#as-a-developer)
+    1. [Required knowledge](#required-knowledge)
+    1. [Setting up your IDE](#setting-up-your-ide)
+    1. [Reporting an issue](#reporting-an-issue)
+    1. [Submitting a pull request](#submitting-a-pull-request)
+    1. [Code conventions](#code-conventions)
+    1. [Analytics implementation](#analytics-implementation)
+    1. [Components architecture](#components-architecture)
+1. [As a Translator](#as-a-translator)
+1. [As a manual tester](#as-a-manual-tester)
+1. [As an automation tester](#as-an-automation-tester)
+1. [Code of conduct](#on-our-code-of-conduct)
+
+</div>
+
+## Ways of contributing
+
+You may contribute to OTTAA
+
+- as a developer; 
+- as a translator; 
+- as a manual tester;
+- as an automation tester. 
+
+## As a developer
+
+### Required knowledge
+
+In order to contribute as a developer, you will need to have a basic understanding of [this/these coding languge/s] and [this/these tool/s (could be a framework, library, platform)]. We also strongly recommend you be familiar with [these language/technology that might not be as important as the other two mentioned but is still important].
+
+#### Setting up your IDE
+
+- Run `flutter pub get` to get the dependencies.
+- Run `flutter pub run build_runner build` to generate the model class code.
+- Run `flutter run` to run the project.
+- If you encounter any errors in model building, run `flutter packages pub run build_runner build --delete-conflicting-outputs`.
+
+### Reporting an issue
+
+Any bug or hotfix that results from manual testing should be reported via an [issue](https://github.com/OTTAA-Project/ottaa_project_flutter/issues) in our GitHub repository. Please **use the [template](https://github.com/OTTAA-Project/ottaa_project_flutter/issues/new?assignees=&labels=&template=bug_report.md&title=)** for bug reporting and **provide as much information as possible** about the bug, including the used **version of OTTAA**, and/or **version of web navigator**, and clear instructions on how to **reproduce** the bug.
+
+
+### Submitting a pull request
+
+Please bear the following in mind when creating a PR:
+
+* Avoid file conflicts with the source code.
+* Make a detailed description of the features it applies to.
+* Make the PR in the corresponding branch.
+* Avoid your PR containing unrelated commits, keep it focused on its scope. 
+
+
+#### Commits
+
+We use the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification for our commit messages. Under this convention the commit message should be structured like this:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+Bear in mind:
+
+1) Type *fix:*: patches a bug in your codebase.
+2) Type *feat:*: introduces a new feature to the codebase (this correlates with MINOR in Semantic Versioning).
+3) Types other than *fix:*: and *feat:*: are allowed, for example *build:*, *chore:*, *ci:*, *docs:*, *style:*, *refactor:*, *perf:*, *test:*.
+4) Footer BREAKING CHANGE or *!* after type/scope: introduces a breaking API change (correlating with MAJOR in Semantic Versioning). 
+5) A BREAKING CHANGE can be part of commits of any type.
+6) Footers other than *BREAKING CHANGE* may be provided and follow a convention similar to the [git trailer format](https://git-scm.com/docs/git-interpret-trailers).
+
+##### Examples
+
+Commit message with description and BREAKING CHANGE footer:
+
+*feat: allow provided config object to extend other configs*
+*BREAKING CHANGE: `extends` key in config file is now used for extending other config files*
+
+
+Commit message with scope and ! to draw attention to breaking change
+
+*feat(api)!: send an email to the customer when a product is shipped
+
+Commit message with both ! and BREAKING CHANGE footer
+
+*chore!: drop support for Node 6
+*BREAKING CHANGE: use JavaScript features not available in Node 6.
+
+
+#### Branch naming 
+
+To name and describe our branches we use the type of change it will contain and a short description, following Git [branching models](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows).
+
+Examples:
+
+|Instance|Branch|Description, Instructions, Notes|
+|---|---|---|
+|Stable|	main	|Accepts merges from Working and Hotfixes|
+|Development|	dev|Accepts merges from Features/Issues, Fixes and Hotfixes|
+|Features/Issues|	feat/*	|Always branch off HEAD of Working|
+|Fixes|	fix/*	|Always branch off HEAD of Working|
+|Hotfix|	hotfix/*	|Always branch off Stable
+
+
+### Code conventions
+
+Consistent code writing, commenting and documenting style is key to collaboration. Make sure that you read the complete *Code conventions* section carefully and that your code complies with our guidelines. We are using [Effective Dart: Style](https://dart.dev/guides/language/effective-dart/style) as our main style guide for Dart. 
+
+#### On commenting and documenting code
+
+To get familiarized with the code, check the [API reference] (place_holder: link to API reference, see [issue_#]()). We use [Dartdoc](https://pub.dev/packages/dartdoc) to build it and will ask you to use it as well when commenting your code. If you require assistance with Dartdoc please check [Using Dartdoc](#using-dartdoc) below.
+
+* Classes, variables, constants, and relationships between classes should always be documented.
+
+* Your comments should be full English sentences.
+
+* Use [Dartdoc](https://pub.dev/packages/dartdoc) to generate automatic standardized documentation for your code. 
+
+* Use ```///``` to comment your code as it is the special syntax Dartdoc looks for when generating the documentation files.
+
+* Do **not** use /* block comments \*/ for documentation:
+
+```
+[x]
+
+void greet(String name) {
+  /* Assume we have a valid name. */
+  print('Hi, $name!');
+}
+``` 
+* **Do** instead:
+
+```
+[✓]
+
+void greet(String name) {
+  // Assume we have a valid name.
+  print('Hi, $name!');
+}
+```
+
+* You *can* use a block comment (/* ... \*/) to temporarily comment out a section of code, but all other comments should use ///.
+
+
+#### Using Dartdoc
+
+If this is your first time using it or you have any doubts about installation, execution, or formatting, please read our [Dartdoc API reference for Flutter](./Documentation/dartdoc) to get started.
+
+
+#### On code duplication
+
+* Do not copy-paste source code. Reuse it in a  way that makes sense, rewriting the necessary parts.
+
+
+#### On importing libraries 
+
+* Sort by category.
+
+|Category|Description|
+|--------|-----------|
+| Google | Library related to google |
+| Android | Library related to android |
+|Firebase | Library related to firebase API|
+|Test |Library related to testing app|
+| Library | Library related to different apps|
+
+* Sort by alphabetical order.
+
+* Use Grandle level app
+
+Example : (place_holder: add code example)
+
+```add code example here```
+
+
+#### On indentation
+
+
+ Switch case
+ 
+Example : (place_holder: add code example)
+
+```add code example here```
+
+
+If / else or else if
+
+Example : (place_holder: add code example)
+
+```add code example here```
+
+#### On classes
+
+* The attributes of the class must be protected or private.
+
+* The Method of the class can be public, private, or protected.
+
+* Classes can be public or private.
+
+* Class names must be transparent and representative of their purpose.
+
+* Class names should be nouns in UpperCamelCase, with the first letter of every word capitalized.
+
+
+Example : (place_holder: add code example)
+
+```add code example here```
+
+#### On variables
+
+* Local variables, instance variables, and class variables should be written in lowerCamelCase: with the exception of the first world, the first letter of every word should be capitalized.
+
+Example : (place_holder: add code example)
+
+```add code example here```
+
+#### On constants
+
+* Constants should be written in UPPERCASE with words separated by underscores.
+
+Example: (place_holder: add code example)
+
+```add code example here```
+
+#### Firebase index:
+
+(place_holder: firebase index needs updating see [issue_#104](https://github.com/OTTAA-Project/ottaa_project_flutter/issues/104))
+```
+#!code
+
+index
+├── Edad
+├── email
+├── Fotos
+|    ├── nombre_foto
+|    └── url_foto
+├── FotosUsuario
+├── Frases
+├── Grupos
+├── Juegos
+├── Pago
+├── Pictos
+├── PrimeraUltimaConexion
+└── Usuarios
+```
+
+### Analytics implementation
+
+[Here](./Documentation/analytics) is the list of events that should be tracked.
+
+### Components architecture
+
+place_holder: paste components architecture diagram once finished. see [issue_#128](https://github.com/OTTAA-Project/ottaa_project_flutter/issues/128)
+
+## As a translator
+
+To help with translations, localization, and proofreading please use our translation management platform: [https://crowdin.com/project/cboard](https://crowdin.com/project/ottaa-project).
+
+We currently support Spanish, English, Portuguese and French, but we are open to adding new languages as users' needs arise. 
+
+Our focus right now is growing in Latin America, specifically Argentina, Chile, Colombia, and the Caribbean. Because of that, we would love some help with **pictogram localization**, that is to say, to have pictograms translated **based on each country/region-specific culture and Spanish variety**. For example, we know that a car 🚗 is commonly *carro* in México but *auto* or *coche* in Argentina. 
+
+
+## As a manual tester
+
+We have test cases for manual testing [here](https://docs.google.com/document/d/1khElUEbtREVsTzwxKmLYfdDYJxCnz0zcNaIraRYaMGs/edit) and we mainly need help testing the overall functionality of the new Flutter version.
+
+Any bug or hotfix that results from manual testing should be reported via an [issue](https://github.com/OTTAA-Project/ottaa_project_flutter/issues) in our GitHub repository using the [template](https://github.com/OTTAA-Project/ottaa_project_flutter/issues/new?assignees=&labels=&template=bug_report.md&title=) for bug reporting.
+
+
+## As an automation tester 
+
+We will be implementing a continuous integration workflow that will be running multiple automated testing. In the meantime, any experience with CI/CD and automated testing in Dart is very much welcome. Feel free to contact us at **support@ottaaproject.com**.
+
+## On our code of conduct
+
+Please read through our [code of conduct](Code-of-Conduct) before contributing.
+
+

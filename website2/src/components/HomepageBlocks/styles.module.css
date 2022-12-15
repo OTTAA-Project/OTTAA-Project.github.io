@@ -1,0 +1,97 @@
+.features {
+
+  width: 100%;
+  background-color: bisque;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+.featureImage {
+  max-width: 60%;
+  max-height:60%;
+  text-align: center;
+  margin: 5%;
+}
+
+.featureTitle{
+  text-align: start;
+  width: 100%;
+  right: 0%;
+  font-size: 30px;
+}
+.featureText{
+  text-align: start;
+  margin-top: 0px;
+  width: 60%;
+  font-size: 20px;
+}
+.featureTable{
+  border-color: bisque;
+  border-width: 0px;
+}
+.featureRight {
+  margin-left: 10px;
+  text-align: right;  
+  display: inline-flex;
+
+}
+.featureRightText {
+  text-align: right;  
+  display: inline-table;
+  margin: 10%;
+  position: relative;
+  left: 0%;
+}
+.featureCenter {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;  
+  display: inline-flex;
+  flex-wrap: nowrap;
+
+}
+
+.featureCenterText {
+  text-align: center;  
+  display: inline-flex;
+
+
+}
+
+.featureLeft{
+  margin-right: 10px;
+  text-align: left;
+  display: inline-flex;
+}
+.featureLeftText{
+  text-align: left;
+  display: inline-block;
+  margin: auto;
+  position: relative;
+  left: 5%;
+}
+
+.featureBoxRight{
+
+  display: inline-flex;
+  width: 100%;
+  padding: auto;
+  background-color: darkslategray;
+}
+.featureBoxLeft{
+  display: inline-flex;
+  width: 100%;
+  padding: auto;
+  background-color: bisque;
+}
+
+.featureBoxRight h2{
+  color: white;
+}
+.featureBoxRight p{
+  color: white;
+}
