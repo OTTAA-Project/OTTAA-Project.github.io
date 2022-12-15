@@ -50,6 +50,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode:{
+        defaultMode:'light',
+        disableSwitch:true,
+        respectPrefersColorScheme: true,
+
+      },
       navbar: {
         title: 'OTTAA Project',
         logo: {
@@ -69,6 +75,7 @@ const config = {
             position: 'right',
           },
         ],
+        
       },
       footer: {
         style: 'dark',
@@ -85,7 +92,7 @@ const config = {
                 href:'/docs/Contributing',
               },
               {
-                label: 'FAQS',
+                label: 'FAQs',
                 href:'/docs/faqs',
               },
               {
@@ -126,6 +133,8 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+
+        
       },
     }),
 };

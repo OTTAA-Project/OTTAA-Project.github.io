@@ -17,7 +17,7 @@ The [OTTAA Project](https://www.ottaaproject.com/) is an augmentative and altern
 You can be a part of this open-source project and help build life-changing technology, join us!
 
 <p align="center">
-<img src="/img/ottaa_project/usar_ottaa.gif" alt="ottaa_img" width="500"/>
+<a href="https://www.youtube.com/watch?v=zAL7yWxc-gU"><img src="/img/ottaa_project/usar_ottaa_2.gif" alt="ottaa_img" width="500"/></a>
 </p>
 
 Read our [Project's Roadmap](https://github.com/orgs/OTTAA-Project/projects/4/views/1) to learn about what features we are currently working on, what stage they are in, and when we expect to deliver them to you. 

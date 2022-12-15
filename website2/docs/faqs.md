@@ -1,6 +1,6 @@
 ---
 id: faqs
-title: OTTAA Project FAQ
+title: OTTAA Project FAQs
 custom_edit_url: null
 ---
 
