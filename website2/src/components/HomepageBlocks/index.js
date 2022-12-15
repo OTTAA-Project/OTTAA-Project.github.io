@@ -31,11 +31,14 @@ const myBlockList = [
 
 function Feature({value,title, description}) {
   return (
-    <div> 
-    <h2 className={styles.featureTitle} >{title}</h2>
-    <td><p className={styles.featureText}>{description}</p></td>
-    <td><img  className={styles.featureImage}src={value}/></td>
-  </div>
+    <div className={styles.featureLeft}>
+    <div > 
+      <h2  className={styles.FeatureTitle}>{title}</h2>
+      <p  className={styles.featureText}>{description}</p>
+     </div>
+     <div className={styles.featureRight}> 
+    <img  className={styles.featureImage}src={value}/>
+  </div></div>
     
   );
 }
