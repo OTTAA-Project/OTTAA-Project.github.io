@@ -11,37 +11,42 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header >
-      <div className="container">
-        <h1 className={styles.customTitle}>{siteConfig.title}</h1>
-      </div>
       <center>
-        <div className={styles.mainTitle}>
-        <div className={styles.buttons}>
-            <Link
-              className={styles.buttonOTTAA}
-              to="/docs/">
-                DOCUMENTATION
+      <div className={styles.container}>
+        <div className={styles.blockSize}>
+          <h1 className={styles.customTitle}>{siteConfig.title}</h1>
+          <div className={styles.mainTitle}>
+            <div className={styles.buttons}>
+              <Link
+                className={styles.buttonOTTAA}
+                to="/docs/">
+                 DOCUMENTATION
+               </Link>
+            </div>
+            <div className={styles.buttons}>
+              <Link
+                className={styles.buttonOTTAA}
+                to="/docs/Accesibility/accesibility-suite">
+                OTTAA ACCESSIBILITY SUITE
               </Link>
             </div>
-          <div className={styles.buttons}>
-            <Link
-              className={styles.buttonOTTAA}
-              to="/docs/Accesibility/accesibility-suite">
-              OTTAA ACCESSIBILITY SUITE
-            </Link>
           </div>
+        </div>
+        <div className={styles.blockSize2}>
+          <img src={"/img/white_logo.png"} className={styles.customTitleImage}/>
+        </div>
+      </div>
+      </center>
 
-          </div>
-        </center>
     </header>
   );
 }
 
 function HomepageImage(){
   return(
-    <view>
-      <a href={"https://www.youtube.com/watch?v=zAL7yWxc-gU"}><img src="img/ottaa_project/usar_ottaa_2.gif"></img></a>
-    </view>
+    <div className={styles.view}>
+      <a href={"https://www.youtube.com/watch?v=zAL7yWxc-gU"}><img src="img/ottaa_project/usar_ottaa_2.gif" className={styles.customImage}></img></a>
+    </div>
   );
 }
 
@@ -65,7 +70,7 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader className={styles.customImage} />
+      <HomepageHeader />
       <center>
         <HomepageImage />
       </center>
