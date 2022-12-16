@@ -10,6 +10,7 @@ const config = {
   tagline: '',
   url: 'https://ottaa-project.github.io/', // Your website URL
   baseUrl: '/', // Base URL for your project */
+  deploymentBranch:"production",
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',

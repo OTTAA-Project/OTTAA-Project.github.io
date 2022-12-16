@@ -41,8 +41,8 @@ function leftBlock({value,title,description}){
         <h2  className={styles.featureTitle}>{title}</h2>
         <p  className={styles.featureText}>{description}</p>
      </div>
-      <div className={styles.featureLeftText}> 
-        <img src={value} className={styles.featureImage}/>
+      <div className={styles.featureLeft}> 
+        <img src={value} className={styles.featureImageLeft}/>
       </div>
     </div>
     );
@@ -50,10 +50,10 @@ function leftBlock({value,title,description}){
 function rightBlock({value,title,description}){
   return (
     <div className={styles.featureBoxRight}>
-    <div className={styles.featureLeft}> 
-    <img src={value} className={styles.featureImage}/>
+    <div className={styles.featureRight}> 
+    <img src={value} className={styles.featureImageRight}/>
     </div>
-    <div className = {styles.featureLeftText}> 
+    <div className = {styles.featureRightText}> 
       <h2  className={styles.featureTitle}>{title}</h2>
       <p  className={styles.featureText}>{description}</p>
      </div>
