@@ -77,10 +77,11 @@ orbs:
   
 jobs:
   deploy-website:
+    environment: 
+      Foo: github-pages
     docker:
       # specify the version you desire here
       - image: cimg/node:19.2.0
-
     steps:
       - checkout
       - run:
@@ -90,14 +91,40 @@ jobs:
             git config --global user.name "$username"
             echo "machine github.com login $username password $circlecitoken	" > ~/.netrc
             cd website2 && yarn install && GIT_USER="$username" yarn deploy
+  dev:
+    environment:
+      Foo: development
+    docker: 
+      - image: cimg/node:19.2.0
+    steps:
+      - checkout
+      - run:
+          name: Testing to Github Pages
+          command: |
+            git config --global user.email "ottaa-project@users.noreply.github.com"
+            git config --global user.name "$username"
+            echo "machine github.com login $username password $circlecitoken	" > ~/.netrc
+            cd website2 && yarn install && GIT_USER="$username" yarn deploy    
+
+
+      
+                
 
 workflows:
-  version: 2.1
+  version: 2
   build_and_deploy:
     jobs:
      - deploy-website:
+                 filters:
+                      branches:
+                            only:
+                              - producction
+     - dev:  
           filters:
               branches:
                 only:
-                  - production
+                  - dev          
+
+
+
 #         filters: *filter-only-master
