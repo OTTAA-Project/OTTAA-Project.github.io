@@ -51,14 +51,13 @@ function rightBlock({value,title,description}){
   return (
     <div className={styles.featureBoxRight}>
     <div className={styles.featureRight}> 
-    <img src={value} className={styles.featureImageRight}/>
+      <img src={value} className={styles.featureImageRight}/>
     </div>
     <div className = {styles.featureRightText}> 
       <h2  className={styles.featureTitle}>{title}</h2>
       <p  className={styles.featureText}>{description}</p>
      </div>
-</div>
-    
+    </div>
   );
 }
 
