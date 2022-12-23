@@ -21,8 +21,11 @@ jobs:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
 
+      - name: yarn start
+        run : yarn --start
       - name: Install dependencies
         run: yarn install --frozen-lockfile --check-files
+        
       - name: Build website
         run: yarn run build
 
