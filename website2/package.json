@@ -39,5 +39,6 @@
   },
   "engines": {
     "node": ">=16.14"
-  }
+  },
+  "homepage": "https://ottaa-project.github.io/"
 }
