@@ -27,7 +27,7 @@ jobs:
         run: yarn install --frozen-lockfile --check-files
         
       - name: Build website
-        run: yarn run build
+        run: yarn build
 
 
       # Popular action to deploy to GitHub Pages:
