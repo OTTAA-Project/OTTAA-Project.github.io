@@ -4,7 +4,7 @@ title: OTTAA Project FAQs
 custom_edit_url: null
 ---
 
-[General questions about the project](#general-questions-about-the-project)
+### [General questions about the project](#general-questions-about-the-project)
 
 1. [What is the OTTAA Project?](#what-is-the-ottaa-project)
 
@@ -14,7 +14,7 @@ custom_edit_url: null
 
 1. [How can I make a financial contribution to the project?](#how-can-i-make-a-financial-contribution-to-the-project)
 
-[Questions from our users](#questions-from-our-users)
+### [Questions from our users](#questions-from-our-users)
 
 1. [Who can use the OTTAA app?](#who-can-use-the-ottaa-app)
 
@@ -30,7 +30,7 @@ custom_edit_url: null
 
 1. [Which languages are supported by the OTTAA Project?](#which-languages-are-supported-by-the-ottaa-project)
 
-[Questions from developers](#questions-from-developers)
+### [Questions from developers](#questions-from-developers)
 
 1. [How can I contribute to the OTTAA Project?](#how-can-i-contribute-to-the-ottaa-project)
 
