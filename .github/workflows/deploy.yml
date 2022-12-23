@@ -28,7 +28,9 @@ jobs:
         run : yarn --start
       - name: Install dependencies
         run: yarn install --frozen-lockfile --check-files
-      - name: redirect
+      - name: list
+        run : ls
+      - name: install
         run : yarn build
 
 
