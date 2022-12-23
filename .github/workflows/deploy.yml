@@ -24,7 +24,7 @@ jobs:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       - name: copy yarn lock
-        run : cp /website2/yarn.lock yarn.lock
+        run : cp website2/yarn.lock yarn.lock
           
       - name: Install dependencies
         run: yarn install --frozen-lockfile --check-files
