@@ -26,13 +26,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile --check-files
       - name: redirect
-        run : cd website2/
-      - name: websiteList
-        run : ls
-        
-      - name: Build website 
-        run : yarn build
-            
+        run : cd website2 && yarn build
 
 
       # Popular action to deploy to GitHub Pages:
