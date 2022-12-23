@@ -31,7 +31,7 @@ jobs:
       - name: list
         run : ls
       - name: build website
-        run : yarn build
+        run : cd website2  && yarn deploy
 
 
       # Popular action to deploy to GitHub Pages:
