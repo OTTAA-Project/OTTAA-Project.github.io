@@ -28,15 +28,13 @@ jobs:
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-      - name: copy yarn lock
-        run : cp website2/yarn.lock yarn.lock
           
       - name: Install dependencies
         run: yarn install --frozen-lockfile --check-files
       - name: list
         run : ls
       - name: build website
-        run : cd website2  && yarn deploy
+        run : yarn build
 
 
       # Popular action to deploy to GitHub Pages:
