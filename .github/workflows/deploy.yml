@@ -43,7 +43,7 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: master
-          build_dir: website2/build
+          build_dir: ./build
         env:
           GITHUB_TOKEN: ${{secrets.GITHUBTOKEN}}  
           # Build output to publish to the `gh-pages` branch:
