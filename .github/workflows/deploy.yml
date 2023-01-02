@@ -50,7 +50,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile --non-interactive
       - name: Deploy to GitHub Pages
-        if: succes()
+        if: success()
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: master
