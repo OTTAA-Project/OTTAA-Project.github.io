@@ -52,6 +52,4 @@ jobs:
             git config --global user.name "41898282+github-actions[bot]@users.noreply.github.com"
             yarn install --frozen-lockfile
             yarn deploy
-            
-        env:
-            USE_SSH: true       
+      
