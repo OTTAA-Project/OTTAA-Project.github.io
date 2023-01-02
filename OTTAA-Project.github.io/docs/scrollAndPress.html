@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Scroll &amp; Press · OTTAA Project</title><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="generator" content="Docusaurus"/><meta name="description" content="The Scroll &amp; Press device imitates the functions of scrolling and left clicking of a traditional PC mouse, which enables the selection of items on the screen with OTTAA Project&#x27;s screen scan functionality.  The device has been specifically designed for motor impaired people who have difficulties in their fine motor skills."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Scroll &amp; Press · OTTAA Project"/><meta property="og:type" content="website"/><meta property="og:url" content="https://ottaa-project.github.io//"/><meta property="og:description" content="The Scroll &amp; Press device imitates the functions of scrolling and left clicking of a traditional PC mouse, which enables the selection of items on the screen with OTTAA Project&#x27;s screen scan functionality.  The device has been specifically designed for motor impaired people who have difficulties in their fine motor skills."/><meta property="og:image" content="https://ottaa-project.github.io/./img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://ottaa-project.github.io/./img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/./img/orange_logo.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GE16D1JY6T"></script><script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments); }
+              gtag('js', new Date());
+              gtag('config', 'G-GE16D1JY6T');
+            </script><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/./img/orange_logo.png" alt="OTTAA Project"/><h2 class="headerTitleWithLogo">OTTAA Project</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/welcome" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Accessibility</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Documentation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/welcome">Wiki</a></li><li class="navListItem"><a class="navItem" href="/docs/Resources">Resources</a></li><li class="navListItem"><a class="navItem" href="/docs/analytics">Analytics Implementation</a></li><li class="navListItem"><a class="navItem" href="/docs/privacypolicy">Privacy Policy</a></li><li class="navListItem"><a class="navItem" href="/docs/techno">Technology Standards.</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Accessibility</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/sipAndPuff">Sip &amp; Puff switch</a></li><li class="navListItem"><a class="navItem" href="/docs/wormAccessible">Worm Accessible Keyboard</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/scrollAndPress">Scroll &amp; Press</a></li><li class="navListItem"><a class="navItem" href="/docs/pressAndPress">Press And Press</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Scroll &amp; Press</h1></header><article><div><span><p>The Scroll &amp; Press device imitates the functions of scrolling and left clicking of a traditional PC mouse, which enables the selection of items on the screen with OTTAA Project's screen scan functionality.  The device has been specifically designed for motor impaired people who have difficulties in their fine motor skills.
+It is compatible with Android, Windows, MacOS and Linux.</p>
+<p><img src="../img/scrollAndPress.jpeg" alt="WhatsApp Image 2020-09-25 at 12.25.05.jpeg"></p>
+<h2><a class="anchor" aria-hidden="true" id="materials"></a><a href="#materials" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Materials</h2>
+<ul>
+<li>High quality sound cable (25cm).</li>
+<li>2 limit switches.</li>
+<li>4mm x 3 self tapping screw.</li>
+<li>Non-slip weatherstrip. D: 4mm, L: 270mm.</li>
+<li>4-wire cables 25cm long (USB like).</li>
+<li>PCB Genius DX110/120.</li>
+<li>OTG adapter.</li>
+<li>Glue and silicone.</li>
+<li>3D printed scroll wheel. Link: <a href="https://drive.google.com/file/d/1ocrwG9pUuppDk_TxXdfU-jw2cZNmA_5Q/view?usp=sharing">F</a>.</li>
+<li>3D printed scroll housing (2 parts). Link:<a href="https://drive.google.com/file/d/1YklgSgGbyKkErdh42jgShiFsRIWufhFL/view?usp=sharing">G</a>, <a href="https://drive.google.com/file/d/1wSbTZ51LTdTbQFrFLeuAIuDAXOjR-aeY/view?usp=sharing">H</a>.</li>
+<li>3D printed push button (2 parts). Link: <a href="https://drive.google.com/file/d/1i-uW3mDjVCnCPgpuQ0q6UytSte6m1uzv/view?usp=sharing">I</a>,<a href="https://drive.google.com/file/d/13alBAoxodGKYPvrrsvb1UEtkjVpU5LSo/view?usp=sharing">J</a>.</li>
+<li>3D printed lectern (2 parts). Link: <a href="https://drive.google.com/file/d/1UnBIApIqUUpsHjtGhUjfPx1pok47QHd1/view?usp=sharing">K</a>, <a href="https://drive.google.com/file/d/1SJAl_br12CNCSe5_JwbfbOU1ZUvuVCAV/view?usp=sharing">L</a>.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="procedure"></a><a href="#procedure" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Procedure</h2>
+<h3><a class="anchor" aria-hidden="true" id="1-3d-printing"></a><a href="#1-3d-printing" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. 3D Printing</h3>
+<ul>
+<li>Parts F, G, H, I, J and K  3D printing settings:</li>
+<li>Material: PLA.</li>
+<li>Temperature of the hotend: 210-215 °C.</li>
+<li>Temperature of the print bed: 50-60 °C.</li>
+<li>Top and Bottom Layers: 3.</li>
+<li>Perimeter Shells: 3.</li>
+<li>Infill: 25%.</li>
+<li>Support: 75°(only B.stl).</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="2-dismantle-genius-dx-120-mouse"></a><a href="#2-dismantle-genius-dx-120-mouse" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Dismantle Genius DX 120 Mouse</h3>
+<ul>
+<li>Take out the mouse PCB and remove the left and right click limit switches.</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="3-assemble-the-push-button"></a><a href="#3-assemble-the-push-button" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Assemble the push-button</h3>
+<ul>
+<li><p>Place the two limit switches on the base of the 3D printed push button (J).</p></li>
+<li><p>Using bipolar cables connect them in a parallel connection and weld them to the PCB.
+The push buttons have to work in normally opened mode. (<a href="https://drive.google.com/file/d/1hJX_H08zH5Y6z50uw2MZ4vjAfXDva6Sh/view?usp=sharing">Figure 7</a>, <a href="https://drive.google.com/file/d/1mCdPttvOAZV-D-qX5y5ws7LYHEmS7hX4/view?usp=sharing">Figure 8</a>, <a href="https://drive.google.com/file/d/1APXE_7N2-TtJhBHzjSdUjh6Z4agkxLwp/view?usp=sharing">PCB connection</a>).</p></li>
+<li><p>Place I on J and fix it with two self-tapping screws (<a href="https://drive.google.com/file/d/1IaYppWFhCYig1H7bOUKBdTVWCPXoFMCv/view?usp=sharing">Figure 9</a>).</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="4-assemble-the-scroll-wheel"></a><a href="#4-assemble-the-scroll-wheel" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Assemble the scroll wheel</h3>
+<ul>
+<li>Insert the mouse wheel in the 3D printed wheel (F)  (<a href="https://drive.google.com/file/d/1-F3uGYET26IC8HWCcdsZrcgf9CHtlKyn/view?usp=sharing">Figure 10</a>, <a href="https://drive.google.com/file/d/1q4QWvtQIGMaWieNQQ45_A7IEqlHPDoS_/view?usp=sharing">Figure 11</a>).</li>
+<li>Place F at the base of the scroll (G).</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="5-assemble-the-scroll"></a><a href="#5-assemble-the-scroll" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. Assemble the scroll</h3>
+<ul>
+<li><p>Fit the encoder’s hole with the protruding end of F.
+Fit the encoder onto part G.</p></li>
+<li><p>With the help of a soldering iron, connect the PCB to the encoder using a 4-wire cable, then secure the welding and wires with silicone.</p></li>
+<li><p>Fit the scroll housing cover (H) with the base (G).</p></li>
+<li><p>Place the non-slip weatherstrip on the underside of G, fix it by pressure and optionally use glue to strengthen the joint.</p></li>
+<li><p>Place the self-tapping wood screw to fix the G to H joint.
+Assemble the tablet stand</p></li>
+<li><p>Place the PCB on the base of the tablet stand (L), ensuring the correct positioning of the bipolar and 4-wire cables.</p></li>
+<li><p>Fit the base of the lectern with the tablet stand housing (K) by pressing and fixing it with a self-tapping screw to close the tablet stand.</p></li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="6--blueprints"></a><a href="#6--blueprints" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>6.  Blueprints</h3>
+<p>The technical drawings of the parts to be printed are shown below:</p>
+<ul>
+<li><p><a href="https://drive.google.com/file/d/1Gh-S2gs5Bl-dMbzCDha28QWEWtS5Rbha/view?usp=sharing">F</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/1mFtqN_vVIQ2uw8AoRI7P6g0OsdIkJBxC/view?usp=sharing">G</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/1rDFh-nLUXIDi5VHBt4X1_hPafqaVpXWx/view?usp=sharing">H</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/1BBacggM7pxs8M68eSeWkXcaqdPH7hQ4x/view?usp=sharing">I</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/18TkBkbq4yBI7dJnZBB6lW_ktg7oRtulf/view?usp=sharing">J</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/1_jd9kli9ysh8BuX5micqTNPQX_uEPNjB/view?usp=sharing">K</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/1LgwKxKWrxWNAA_plA4ngFvSCZesAGAog/view?usp=sharing">L</a></p></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/wormAccessible"><span class="arrow-prev">← </span><span>Worm Accessible Keyboard</span></a><a class="docs-next button" href="/docs/pressAndPress"><span>Press And Press</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#materials">Materials</a></li><li><a href="#procedure">Procedure</a><ul class="toc-headings"><li><a href="#1-3d-printing">1. 3D Printing</a></li><li><a href="#2-dismantle-genius-dx-120-mouse">2. Dismantle Genius DX 120 Mouse</a></li><li><a href="#3-assemble-the-push-button">3. Assemble the push-button</a></li><li><a href="#4-assemble-the-scroll-wheel">4. Assemble the scroll wheel</a></li><li><a href="#5-assemble-the-scroll">5. Assemble the scroll</a></li><li><a href="#6--blueprints">6.  Blueprints</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/./img/orange_logo.png" alt="OTTAA Project" width="66" height="58"/></a><div><h5>Documentation</h5><a href="/docs/Readme">Readme</a><a href="/docs/welcome">Wiki</a><a href="/docs/Contributing">How to Contributing</a></div><div><h5>Community</h5><a href="/users">User Showcase</a><a href="https://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://github.com/orgs/OTTAA-Project/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div><div><h5>License</h5><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a><a rel="license" href="http://creativecommons.org/licenses/by/4.0/">This work is licensed under a  Creative Commons Attribution 4.0 International License</a>.</div></section><a href="https://www.facebook.com/ottaaproject" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/img/lines.svg" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2022 OTTAA Project</section></footer></div></body></html>

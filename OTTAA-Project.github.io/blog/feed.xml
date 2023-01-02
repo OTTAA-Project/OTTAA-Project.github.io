@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>OTTAA Project Blog</title>
+        <link>https://ottaa-project.github.io//blog</link>
+        <description>The best place to stay up-to-date with the latest OTTAA Project news and events.</description>
+        <lastBuildDate>Tue, 12 Oct 2021 06:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>OTTAA Project Blog</title>
+            <url>https://ottaa-project.github.io//./img/orange_logo.png</url>
+            <link>https://ottaa-project.github.io//blog</link>
+        </image>
+        <copyright>Copyright © 2022 OTTAA Project</copyright>
+        <item>
+            <title><![CDATA[Version 96]]></title>
+            <link>https://ottaa-project.github.io//blog/2021/10/12/blog-post.html</link>
+            <guid>https://ottaa-project.github.io//blog/2021/10/12/blog-post.html</guid>
+            <pubDate>Tue, 12 Oct 2021 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>In OTTAA-Project always are working to help all talk Impairment people. in this release, we solve the next issues:</p> <ul> <li>Recommendation algorithm speed</li> <li>Login activity problems related</li> <li>Game memory problem</li> </ul> ]]></description>
+        </item>
+    </channel>
+</rss>
