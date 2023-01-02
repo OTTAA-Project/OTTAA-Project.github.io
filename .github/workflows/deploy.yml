@@ -34,9 +34,11 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    defaults:
+        run:
+          working-directory: './website2'
     runs-on: ubuntu-latest
     steps:
-      - working-directory: 'website2'
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node.js
