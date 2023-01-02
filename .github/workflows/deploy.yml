@@ -53,4 +53,4 @@ jobs:
             git config --global user.email "github-actions[bot]"
             git config --global user.name "41898282+github-actions[bot]@users.noreply.github.com"
             yarn install --frozen-lockfile
-          yarn deploy
+            yarn deploy
