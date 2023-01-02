@@ -56,5 +56,5 @@ jobs:
           target_branch: master
           build_dir: website/build
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}  
+          GITHUB_TOKEN: ${{secrets.DOCUMENTATION_TOKEN}}  
           # Build output to publish to the `gh-pages` branch:
