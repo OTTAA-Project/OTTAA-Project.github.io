@@ -38,12 +38,14 @@ jobs:
           cache-dependency-path: "./website2/yarn.lock"
       - name: Install dependencies
         run: yarn install --frozen-lockfile --non-interactive
+      - name: build
+        run: yarn build
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: gh-pages
-          build_dir: website/build
+          build_dir: website2/build
         env:
           GITHUB_TOKEN: ${{secrets.GITHUBTOKEN}}  
           # Build output to publish to the `gh-pages` branch:
