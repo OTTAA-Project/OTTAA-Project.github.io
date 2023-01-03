@@ -242,25 +242,7 @@ Example: (place_holder: add code example)
 
 #### Firebase index:
 
-(place_holder: firebase index needs updating see [issue_#104](https://github.com/OTTAA-Project/ottaa_project_flutter/issues/104))
-```
-#!code
-
-index
-├── Edad
-├── email
-├── Fotos
-|    ├── nombre_foto
-|    └── url_foto
-├── FotosUsuario
-├── Frases
-├── Grupos
-├── Juegos
-├── Pago
-├── Pictos
-├── PrimeraUltimaConexion
-└── Usuarios
-```
+![Firebase Index](/img/ottaa_project/firebaseindex.png)
 
 ### Analytics implementation
 
