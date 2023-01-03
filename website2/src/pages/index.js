@@ -11,7 +11,6 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header >
-      <center>
       <div className={styles.container}>
         <div className={styles.blockSize}>
           <h1 className={styles.customTitle}>{siteConfig.title}</h1>
@@ -36,7 +35,7 @@ function HomepageHeader() {
           <img src={"/img/white_logo.png"} className={styles.customTitleImage}/>
         </div>
       </div>
-      </center>
+      
 
     </header>
   );
@@ -71,9 +70,8 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
-      <center>
-        <HomepageImage />
-      </center>
+      <HomepageImage />
+
       <main>
         <HomepageFeatures />
       <center>

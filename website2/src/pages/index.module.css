@@ -16,15 +16,17 @@
   }
 }
 .container{
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content:left;
+  position: relative;
+  left: 20%;
 }
 
 .buttons {
   display: inline-table;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   color: orangered;
   text-align: center;
 }
@@ -38,7 +40,9 @@
 
 .mainTitle{
   width: 100%;
-  align-items: center;
+  justify-content: center;
+
+  display: flex;
 }
 
 Link{
@@ -78,9 +82,10 @@ Link{
   width: 100%;
   height: 100%;
   position: relative;
-  left: -15%;
+  left: 0%;
   background-color: bisque;
   border-radius: 10px;
+  margin-top: 40px;  
 }
 .customTitleImage{
   width: 40%;
@@ -88,16 +93,14 @@ Link{
 }
 
 .view{
-  margin: 30px;
-  display: inline-flex;
-  text-align: start;
-  align-items: flex-start;
-  margin: 40px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
 }
 .blockSize{
-  width: 80%;
-  max-width: 80%;
-  min-width: 80%;
+  width: 60%;
+  max-width: 60%;
+  min-width: 60%;
 }
 .blockSize2{
   width: 20%;
