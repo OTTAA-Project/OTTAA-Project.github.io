@@ -12,6 +12,7 @@ function HomepageHeader() {
   return (
     <header >
       <div className={styles.container}>
+      <div></div>
         <div className={styles.blockSize}>
           <h1 className={styles.customTitle}>{siteConfig.title}</h1>
           <div className={styles.mainTitle}>
@@ -31,6 +32,7 @@ function HomepageHeader() {
             </div>
           </div>
         </div>
+        <div></div>
         <div className={styles.blockSize2}>
           <img src={"/img/white_logo.png"} className={styles.customTitleImage}/>
         </div>
