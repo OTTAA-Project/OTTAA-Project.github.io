@@ -1,0 +1,295 @@
+---
+id: Android_Java_Testing
+title: Android Java Testing
+sidebar_position: 1
+custom_edit_url: null
+---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# Welcome To Android Testing Java
+
+Sometimes, manual tests are necessary to find different errors that Automatic Testing does not find it.
+<br/>
+
+The errors can be:
+* Design errors
+* Functions Bug
+* Other kinds of bugs
+
+<Tabs>
+
+<TabItem value ="Testing Setup">
+
+**Set Up the Test**
+
+|  OTTAA Testing  |
+ --- | --- |
+| **Version**| Product Version|
+| **N° Testing** | Testing number ° | 
+| **Date** | Testing date |
+| **Device** | Testing Device |
+| **User Name** | User name |
+|**Gender**| User Gender| 
+ 
+ **Remember :**
+
+ * **Product Version** : Fill this text field with the number version for testing.
+ * **N° Testing** : Fill this text field with the number of testing.
+ * **Date** : Fill this text field with the date of testing.
+ * **Device** : Fill this text field with the name of device to testing.
+ * **User Name** : Fill this text field with the user name who test it.
+ * **Gender** : Fill this text field with the user gender :
+    * The Gender can be  
+        1. Female 
+        1. Male 
+        1. Binary 
+        1. Other
+
+</TabItem>
+<TabItem value ="Onboarding">
+
+| **Login First Time** |
+|---| ---| ---| ---| ---|
+| **Sr N°** |**TestCase**|**Stepst to execute**|**Expected Result**|**Error Description**|
+| 1 |TC -001|Is the splash screen working? |The Splash Screen should show the animation|
+| 2 |TC -002|Does the system choose the language in the splash  screen? | The login screen should be shown their texts by locale.|
+
+| **Fill User Data** |
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+| 3|TC -003|Choose Gender| Select the user Gender|<ul><li> Touch the gender List </li> <li>Select the user gender </li> </ul>|User should select their gender successfully ||
+| 4|TC -004|Choose Name| Change the user name|<ul><li>Touch the name text field </li><li>Insert your name</li></ul>|User should change their nickname successfully||| 
+| 5|TC -005|Choose Age | Select User Age| <ul><li>Touch the date field </li><li>Select the user's age</li></ul>|User should select their age successfully | | | 
+| 6|TC -006|Tutorial | Navigate to Tutorial <ul></ul>| <ul><li>Touch the tutorial button</li></ul>|Two possible situations:<ul> <li> If the user completes the previous steps: The system should navigate to the next window.</li><li> Else the system stays in the same window</li></ul>| | | 
+
+| **Tutorial** |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+| 8|TC -008|Short Tutorial | Select the short tutorial button  | <ul><li>Choose the button that says short tutorial</li><li>The system should show the short tutorial </li></ul>|  | 
+| 9|TC -009|Book a demo| Select the book a demo button |<ul><li>Choose the button that says book a demo</li><li>The system should show the book demo tutorial</li><li> Touch the button Book a demo</li><li>The system should open a webpage</li><li> Book a demo</li></ul>  |  | 
+| 10|TC -010||  |  |  | 
+| 11|TC -011+|Does the system send an email with the OTTAA Awo link? |  |  |  | 
+
+| **Avatar** |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+| 12|TC -012 | Can you choose the avatar? |  |  |  | 
+| 13|TC -013 |Can you take a picture and crop them? |  |  |  | 
+| 14|TC -014 |Can you choose a gallery picture and crop them? |  |  |  | 
+
+</TabItem>
+<TabItem value ="Main Screen">
+
+| **Main Screen** | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|15|TC -015| Are the pictograms sorted by score? |  |
+|16|TC -016| Can you edit a pictogram? |  |  | 
+|17|TC -017| Can you delete any relationships? |  |  | 
+|18|TC -018| Can you add relationships between pictograms? |  |  | 
+|19|TC -019| Is the “phrase compositor” working? |  |  | 
+|20|TC -020| Is the share function working? |  |  | 
+|21|TC -021| Does the most used phrases button work? |  |  | 
+|22|TC -022| Does the erase button work? |  |  | 
+|23|TC -023| Does the talk button work? |  |  | 
+|24|TC -024| Does the choose more options button work? |  |  | 
+|25|TC -025| Does the group’s gallery  button work? |  |  | 
+|26|TC -026| Does the games button work? |  |  | 
+|27|TC -027| Can you go to the settings? |  |  | 
+|28|TC -028| The settings button works |  |  | 
+|29|TC -029| Location works |  |  | 
+
+| **Share Files** |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|30|TC -030|| Passed | Error Description | 
+|31|TC -031| A dialogue jumps indicating that you put together a sentence? |  |  |
+|32|TC -032| Allows audio sharing? |  |  |
+|33|TC -033| Can you share image and text? |  |  | 
+|34|TC -034| Allows you to share text? |  |  |
+|35|TC -035| Closes the dialog when it does? |  |  |
+|36|TC -036|  |  |  |  | 
+
+</TabItem>
+<TabItem value ="Gallery">
+
+| **Group Gallery** |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|37|TC -37| allows to change position groups? |  |  |  | 
+|38|TC -38| allows editing groups? |  |  |  | 
+|39|TC -39| update when a group is added? |  |  |  | 
+|40|TC -40| update when name is changed? |  |  |  | 
+|41|TC -41| update the icon of each group? |  |  |  | 
+|42|TC -42| Allows you to add groups? |  |  |  | 
+|43|TC -43| ask permissions to download photos? |  |  |  | 
+|44|TC -44| download the photos? |  |  |  | 
+
+| **Pictograms Gallery** |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|45|TC -45| allows you to search for pictograms? |  |  |  | 
+|46|TC -46| allows linking pictograms? |  |  |  | 
+|47|TC -47| Can you add pictograms? |  |  |  | 
+|48|TC -48| allows to change position pictogram? |  |  |  | 
+|49|TC -49| unlink pictograms from the group? |  |  |  | 
+|50|TC -50| when i add a pict does it allow to move the pictograms within the group without losing the pict when leaving the group? |  |  |  | 
+
+
+
+
+</TabItem>
+<TabItem value=" Create and Edit">
+
+| **Add Icon** |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|51|TC -51| Allows you to add photos from the camera? |  |  |  | 
+|52|TC -52| allows to add photo from gallery? |  |  |  | 
+|53|TC -53| does it allow me to add photos of arasaac? |  |  |  | 
+|54|TC -54| can you edit the name? |  |  |  | 
+|55|TC -55| Allows you to select the color range |  |  |  | 
+|56|TC -56| question to finish adding the picto? |  |  |  | 
+
+| **Edit Icon** |  |  |
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|57|TC -57| allows to change pictogram? |  |  |  | 
+|58|TC -58| allows you to edit the text? |  |  |  | 
+|59|TC -59| save the changes and the group show those changes? |  |  |  | 
+|60|TC -60| question to finish editing the pict? |  |  |  | 
+
+|**Add Group** |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|61|TC -61| Does it comply with the same as adding a pictogram? |  |  |  | 
+|62|TC -62| gallery groups shows the added group? |  |  |  | 
+|63|TC -63| question to finish adding the group? |  |  |  | 
+
+| **Edit Group** |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|64|TC -64| allow to update photo? |  |  |  | 
+|65|TC -65| allow to update name? |  |  |  | 
+|66|TC -66| gallery groups shows the edited icon? |  |  |  | 
+|67|TC -67| question to finish editing the group? |  |  |  | 
+
+| **Report** |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|68|TC -68| shows the 5 most used phrases? |  |  |  | 
+|69|TC -69| shows the percentage of phrase usage per month during the day? |  |  |  | 
+|70|TC -70| shows the percentage of most used groups? |  |  |  | 
+|71|TC -71| shows the percentage of use of the game in the most used groups? |  |  |  | 
+
+| **Assign Tags** |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|72|TC -72|Load select tags dialog? |  |  |  
+|73|TC -73|Allows you to select the labels |  |  |  | 
+|74|TC -74|Save selected tags? |  |  |  | 
+|75|TC -75|In case it is a group, the selected tags assign to the related picts? |  |  |  | 
+|76|TC -76|Can I assign the tag individually to a pict? |  |  |  | 
+|77|TC -77|Load the groups/ picts within the main window according to the assigned tag ? |  |  |  | 
+</TabItem>
+<TabItem value ="Games">
+
+| **Which is the picto** |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|78|TC -78| displays the user's precision level |  |  |  | 
+|79|TC -79| load the correct group? |  |  |  | 
+|80|TC -80| save the score of the group? |  |  |  | 
+
+| **Join Pictograms** |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|81|TC -81| displays the user's precision level |  |  |  | 
+|82|TC -82| are the pictograms marked correctly? |  |  |  | 
+|83|TC -83| save the score of the group? |  |  |  | 
+|84|TC -84| The option to strengthen knowledge works |  |  |  | 
+
+</TabItem>
+<TabItem value="Phrases">
+
+| **Favorite Phrases** |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|85|TC -85| Load dialogue favorite phrases? |  |  | 
+|86|TC -86| Allows you to select one of the 4 most used phrases? |  |  |  | 
+|87|TC -87| When selecting the phrase the system speaks ? |  |  |  | 
+|88|TC -88| Does the system say the selected phrase? |  |  |  | 
+
+</TabItem>
+<TabItem value =" Setting">
+
+| Settings |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|89|TC -89| does the disable edit picto option work? |  |  |  | 
+|90|TC -90| Does the calendar option work? |  |  | disabled | 
+|91|TC -91| Does the location option work? |  |  |  | 
+|92|TC -92| Does the talk and delete option work? |  |  |  | 
+|93|TC -93| Does the screen wipe function work? |  |  |  | 
+|94|TC -93| does the custom tts option work? |  |  |  | 
+|95|TC -95| When the custom tts function is activated, does it allow you to modify the voice speed? |  |  |  | 
+|96|TC -96| When the custom tts function is activated, does it allow you to modify the tone of voice? |  |  |  | 
+|97|TC -97| Allows you to activate the custom subtitle function? |  |  |  | 
+|98|TC -98| When the custom subtitle is activated, does it allow you to change the font size? |  |  |  | 
+|99|TC -99| Can you select the language? |  |  |  | 
+|100|TC -100| When selecting another language does the language of the application change? |  |  |  | 
+|101|TC -101| does the ottaa labs option work? |  |  |  | 
+|102|TC -102| does it go into the report? |  |  |  | 
+|103|TC -103| enters the about ? |  |  |  | 
+|104|TC -104| Does the button to access the backup work? |  |  | disabled | 
+|105|TC -105| sign out? |  |  |  | 
+
+
+| Login Activity |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|106|TC -106| close session is not lost? |  |  |  | 
+|107|TC -107| After closing the session and the application, the system does not throw any errors? |  |  |  | 
+|108|TC -108| the system as soon as you log in downloads all the groups and picts |  |  |  | 
+
+| Synchronization |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|109|TC -109| when i add the relationship on one tablet, the other tablet adds the relationship as soon as the app starts? |  |  |  | 
+|110|TC -110| When I delete the relationship with a pict, does the other tablet delete the relationship? |  |  |  | 
+|111|TC -111| Does the system synchronize the frequency of phrases?|  |  |  | 
+|112|TC -112| Does the system modify the data of the group in case it is edited from another device? |  |  |  | 
+|113|TC -113| Does the system update the groups in case of deleting any? |  |  |  | 
+|114|TC -114| does the system update the groups in case one is added? |  |  |  | 
+|115|TC -115| The system updates the score with respect to the affinity or knowledge that the user has with respect to the most used groups?|
+|116|TC -116|*This is seen with the noti games and in the report* |  |  |  | 
+|117|TC -117| Does the system remove the pictogram from a group in case it is removed from another device in the same group? |  |  |  | 
+|118|TC -118| Does the system enter a pictogram in the group when this pictogram is added in the group from another device? |  |  |  | 
+|119|TC -119| Does the system update the data of a pictogram when I modify it from another device? |  |  |  | 
+
+| Language |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|120|TC -120| translate into arabic |  |  |  | 
+|121|TC -121| Translate to English |  |  |  | 
+
+| Premium |  |  |
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|122|TC -122| Blocks in real time |  |  |  | 
+|123|TC -123| Clear screen wipe when active? |  |  |  | 
+
+
+
+
+| Screen Scanning |  |  |  | 
+| ---| ---| ---| ---|---|---|---|
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|124|TC -124| display the pointer over each item in the sweep? |  |  | 
+|125|TC -125| Allows you to change the sweep option in real time? |  |  |  | 
+|126|TC -126| When integrating a device, be it a mouse or a joystick, does it work correctly with the option to advance and accept? |  |  |  | 
+|  |  |  |  |
+</TabItem>
+</Tabs>
