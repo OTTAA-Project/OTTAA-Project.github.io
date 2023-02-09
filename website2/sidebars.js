@@ -35,6 +35,11 @@ const sidebars = {
       label: 'Accesibility',
       items: ['Accesibility/accesibility-suite','Accesibility/pressAndPress','Accesibility/scrollAndPress','Accesibility/sipAndPuff','Accesibility/wormAccessible'],
     },
+    {
+      type: 'category',
+      label: 'Testing',
+      items: ['Testing/Java/Android/Android_Java_Testing',],
+    },
   ],
    
 };
