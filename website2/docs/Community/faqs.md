@@ -85,7 +85,7 @@ The OTTAA app is different from other AAC apps because of its innovative predict
 -----------------------------------------
     
 
-To use OTTAA Project you need a compatible device (see question 5) and any assistive device you need to control it. Check out our certified [open hardware devices](./Accesibility/sipAndPuff) or order one from our store.
+To use OTTAA Project you need a compatible device (see question 5) and any assistive device you need to control it. Check out our certified [open hardware devices](../Accesibility/sipAndPuff) or order one from our store.
 
 After you install it you can take our [online training course](https://www.ottaaproject.com/autoworkshop/) to learn how to take the most out of OTTAA. As of November 2022, the course is only available in Spanish. Any contributions to translating it to English or any other supported languages are welcome.
 

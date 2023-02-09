@@ -74,7 +74,7 @@ The complete list of libraries used and their functions can be found [here](./Do
 
 ## Contributing
 
-Contributors help the OTTAA Project grow. If you would like to become a contributor, please read [Contributing](Contributing).
+Contributors help the OTTAA Project grow. If you would like to become a contributor, please read [Contributing](./Community/Contributing).
 
 ## Technology Standards
 

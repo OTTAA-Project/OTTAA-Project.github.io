@@ -162,7 +162,7 @@ void greet(String name) {
 
 #### Using Dartdoc
 
-If this is your first time using it or you have any doubts about installation, execution, or formatting, please read our [Dartdoc API reference for Flutter](./Documentation/dartdoc) to get started.
+If this is your first time using it or you have any doubts about installation, execution, or formatting, please read our [Dartdoc API reference for Flutter](/Documentation/dartdoc) to get started.
 
 
 #### On code duplication
@@ -246,7 +246,7 @@ Example: (place_holder: add code example)
 
 ### Analytics implementation
 
-[Here](./Documentation/analytics) is the list of events that should be tracked.
+[Here](../Documentation/analytics) is the list of events that should be tracked.
 
 ### Components architecture
 
