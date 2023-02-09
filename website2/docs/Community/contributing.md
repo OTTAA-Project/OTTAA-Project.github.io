@@ -162,7 +162,7 @@ void greet(String name) {
 
 #### Using Dartdoc
 
-If this is your first time using it or you have any doubts about installation, execution, or formatting, please read our [Dartdoc API reference for Flutter](/Documentation/dartdoc) to get started.
+If this is your first time using it or you have any doubts about installation, execution, or formatting, please read our [Dartdoc API reference for Flutter](../Documentation/dartdoc) to get started.
 
 
 #### On code duplication
