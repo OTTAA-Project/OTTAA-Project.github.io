@@ -93,15 +93,15 @@ const config = {
               },
               {
                 label: 'Contributing',
-                href:'/docs/Contributing',
+                href:'/docs/Community/Contributing',
               },
               {
                 label: 'FAQs',
-                href:'/docs/faqs',
+                href:'/docs/Community/faqs',
               },
               {
                 label: 'Privacy Policy',
-                href:'/docs/privacypolicy',
+                href:'/docs/Community/privacypolicy',
               },
             ],
           },
