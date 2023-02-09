@@ -10,12 +10,12 @@ import TabItem from '@theme/TabItem';
 
 # Welcome To Android Testing Java
 
-Sometimes, manual tests are necessary to find different errors that Automatic Testing does not find it.
+Sometimes, manual tests are necessary to find different errors that Automatic Testing can not find.
 <br/>
 
 The errors can be:
 * Design errors
-* Functions Bug
+* Function Bugs
 * Other kinds of bugs
 
 <Tabs>
@@ -27,7 +27,7 @@ The errors can be:
 |  OTTAA Testing  |
  --- | --- |
 | **Version**| Product Version|
-| **N° Testing** | Testing number ° | 
+| **N° Testing** | Testing number | 
 | **Date** | Testing date |
 | **Device** | Testing Device |
 | **User Name** | User name |
@@ -48,248 +48,72 @@ The errors can be:
         1. Other
 
 </TabItem>
-<TabItem value ="Onboarding">
+<TabItem value ="Onboarding">   
 
 | **Login First Time** |
 |---| ---| ---| ---| ---|
-| **Sr N°** |**TestCase**|**Stepst to execute**|**Expected Result**|**Error Description**|
+| **Sr N°** |**TestCase**|**Steps to execute**|**Expected Result**|**Error Description**|
 | 1 |TC -001|Is the splash screen working? |The Splash Screen should show the animation|
-| 2 |TC -002|Does the system choose the language in the splash  screen? | The login screen should be shown their texts by locale.|
+| 2 |TC -002|Does the system choose the language in the splash  screen? | The login screen should be show the texts by locale.|
 
 | **Fill User Data** |
 | ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Steps to execute**| **Expected Result**| **Error Description**
 | 3|TC -003|Choose Gender| Select the user Gender|<ul><li> Touch the gender List </li> <li>Select the user gender </li> </ul>|User should select their gender successfully ||
 | 4|TC -004|Choose Name| Change the user name|<ul><li>Touch the name text field </li><li>Insert your name</li></ul>|User should change their nickname successfully||| 
 | 5|TC -005|Choose Age | Select User Age| <ul><li>Touch the date field </li><li>Select the user's age</li></ul>|User should select their age successfully | | | 
-| 6|TC -006|Tutorial | Navigate to Tutorial <ul></ul>| <ul><li>Touch the tutorial button</li></ul>|Two possible situations:<ul> <li> If the user completes the previous steps: The system should navigate to the next window.</li><li> Else the system stays in the same window</li></ul>| | | 
+| 6|TC -006|Tutorial | Navigate to Tutorial <ul></ul>| <ul><li>Touch the tutorial button</li></ul>|Two possible situations:<ul> <li> If the user completes the previous Steps: The system should navigate to the next window.</li><li> Else the system stays in the same window</li></ul>| | | 
 
 | **Tutorial** |  |  |  | 
 | ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-| 8|TC -008|Short Tutorial | Select the short tutorial button  | <ul><li>Choose the button that says short tutorial</li><li>The system should show the short tutorial </li></ul>|  | 
-| 9|TC -009|Book a demo| Select the book a demo button |<ul><li>Choose the button that says book a demo</li><li>The system should show the book demo tutorial</li><li> Touch the button Book a demo</li><li>The system should open a webpage</li><li> Book a demo</li></ul>  |  | 
-| 10|TC -010||  |  |  | 
-| 11|TC -011+|Does the system send an email with the OTTAA Awo link? |  |  |  | 
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Steps to execute**| **Expected Result**| **Error Description**
+| 7|TC -007|Short Tutorial | Select the short tutorial button  | <ul><li>Choose the button short tutorial</li><li>The system should show the short tutorial </li></ul>| A short tutorial should be shown.  | 
+| 8|TC -008|Book a demo| Select the book a demo button |<ul><li>Choose the button book a demo</li><li>The system should show the book demo tutorial</li><li> Touch the button Book a demo</li><li>The system should open a webpage</li><li> Book a demo</li></ul>  | The user should book a demo. | 
+| 9|TC -009|Copy Link|  Copy the OTTAA Auto-Workshop Link | <ul><li>Choose The button Do A Guided Workshop</li><li>Choose The button says Copy URL.</li><li>Dismiss OTTAA.</li><li>Open A Web Browser and paste the link here.</li></ul> |Go to OTTAA Workshop  | 
+| 10|TC -010+|Receive an email | Receive an email with the OTTAA workshop link. | <ul><li>Choose The button Do A Guided Workshop</li><li>Choose The button says Email Me.</li><li>Await the Expected mail</li><li>Open your mailbox and review your emails.<br/> If you don't find it go to the Spam mailbox. </li></ul>| Received an OTTAA email. | 
 
 | **Avatar** |  |  |  | 
 | ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-| 12|TC -012 | Can you choose the avatar? |  |  |  | 
-| 13|TC -013 |Can you take a picture and crop them? |  |  |  | 
-| 14|TC -014 |Can you choose a gallery picture and crop them? |  |  |  | 
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Steps to execute**| **Expected Result**| **Error Description**
+| 11|TC -011 | Choose your Avatar | Choose The user Avatar | <ul><li>Choose any avatar option</li><li>The system should show the avatar icon at the top Icon.</li></ul> | The user should select an avatar. | 
+| 12|TC -012 | Take a Picture | Shot a picture  |  <ul><li>Choose the pencil icon</li><li>Choose the camera icon</li><li>Take a picture</li><li>Choose the crop size.</li><li>Choose an icon<ul><li>No Icon</li><li>Yes Icon</li></ul><ul>The system can show or not the picture by chosen option.</ul></li></ul>| The system should show the picture that was taken. | 
+| 13|TC -013 |Take a Picture from the gallery |  Choose a picture from the gallery| <ul><li>Choose the pencil icon</li><li>Choose the land icon</li><li>Select a picture </li><li>Choose the crop size.</li><li>Choose an icon<ul><li>No Icon</li><li>Yes Icon</li></ul><ul>The system can show or not the picture by chosen option.</ul></li></ul> |The system should show the picture that was selected.  | 
+
+
 
 </TabItem>
 <TabItem value ="Main Screen">
 
 | **Main Screen** | 
 | ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|15|TC -015| Are the pictograms sorted by score? |  |
-|16|TC -016| Can you edit a pictogram? |  |  | 
-|17|TC -017| Can you delete any relationships? |  |  | 
-|18|TC -018| Can you add relationships between pictograms? |  |  | 
-|19|TC -019| Is the “phrase compositor” working? |  |  | 
-|20|TC -020| Is the share function working? |  |  | 
-|21|TC -021| Does the most used phrases button work? |  |  | 
-|22|TC -022| Does the erase button work? |  |  | 
-|23|TC -023| Does the talk button work? |  |  | 
-|24|TC -024| Does the choose more options button work? |  |  | 
-|25|TC -025| Does the group’s gallery  button work? |  |  | 
-|26|TC -026| Does the games button work? |  |  | 
-|27|TC -027| Can you go to the settings? |  |  | 
-|28|TC -028| The settings button works |  |  | 
-|29|TC -029| Location works |  |  | 
-
-| **Share Files** |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|30|TC -030|| Passed | Error Description | 
-|31|TC -031| A dialogue jumps indicating that you put together a sentence? |  |  |
-|32|TC -032| Allows audio sharing? |  |  |
-|33|TC -033| Can you share image and text? |  |  | 
-|34|TC -034| Allows you to share text? |  |  |
-|35|TC -035| Closes the dialog when it does? |  |  |
-|36|TC -036|  |  |  |  | 
-
-</TabItem>
-<TabItem value ="Gallery">
-
-| **Group Gallery** |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|37|TC -37| allows to change position groups? |  |  |  | 
-|38|TC -38| allows editing groups? |  |  |  | 
-|39|TC -39| update when a group is added? |  |  |  | 
-|40|TC -40| update when name is changed? |  |  |  | 
-|41|TC -41| update the icon of each group? |  |  |  | 
-|42|TC -42| Allows you to add groups? |  |  |  | 
-|43|TC -43| ask permissions to download photos? |  |  |  | 
-|44|TC -44| download the photos? |  |  |  | 
-
-| **Pictograms Gallery** |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|45|TC -45| allows you to search for pictograms? |  |  |  | 
-|46|TC -46| allows linking pictograms? |  |  |  | 
-|47|TC -47| Can you add pictograms? |  |  |  | 
-|48|TC -48| allows to change position pictogram? |  |  |  | 
-|49|TC -49| unlink pictograms from the group? |  |  |  | 
-|50|TC -50| when i add a pict does it allow to move the pictograms within the group without losing the pict when leaving the group? |  |  |  | 
+|**Sr N°**| **TestCase**|**Feature**|**Description**|**Steps to execute**| **Expected Result**| **Error Description**
+|14|TC -014| Sort pictograms by score. | Sorts the user pictograms by score. |<ul><li>Choose Mom Pictogram</li><li>Choose the Give Pictogram</li><li>Choose Story pictogram.</li><li>Touch The talk button.</li><li>Repeat these Steps five times.</li></ul>|The system should show the first option of Give pictogram the stories pictogram. |
+|15|TC -015| Delete relationship | Delete a relationship of the pictogram. | <ul><li>Chose the I or me pictogram</li><li>Select the third option and make a long press.</li><li>Choose the delete option</li><li>Choose any option <ul><li>NO</li><li>YES</li></ul></li><li>If you choose the yes option, the system shouldn't show that pictogram when the User selects the I option.</li></ul>| A pictogram relationship has been deleted successfully. |
+|16|TC -016| Add relationship by gallery button. |Created a new relationship. | <ul><li>Choose the I pictogram</li><li>Touch the Gallery button</li><li>Touch the Actions group</li><li>Navigate and find the investigate pictogram.</li><li>Touch it two times.<br/>The first time awaits the message showing.</li><li>The application shows the new relationship. </li></ul> |  A new pictogram relationship has been created successfully.| 
+|17|TC -017| Add relationship by add more options button. |Created a new relationship. | <ul><li>Choose the I pictogram</li><li>Touch the more options button until finding the add more pictograms.</li><li>Touch the add more pictograms button.</li><li>Touch the Actions group.</li><li>Navigate and find the Go pictogram.</li><li>Touch it two times.<br/>The first time awaits the message showing.</li><li>The application shows the new relationship. </li></ul> |  A new pictogram relationship has been created successfully.| 
+|18|TC -018| Talk a phrase| Say a phrase in a loud voice. | <ul><li>Choose the Hello pictogram </li><li>Choose the dad pictogram</li><li>Touch the talk button</li></ul> |The system should say the message aloud.|
+|19|TC -019| Talk a phrase| Say a phrase in a loud voice. | <ul><li>Choose the Hello pictogram </li><li>Choose the dad pictogram</li><li>Touch the talk button</li></ul> |The system should say the message aloud.|
+|20|TC -020| Erase one Pictogram |Remove one pictogram from the phrase  | <ul><li>Choose the Hello pictogram </li><li>Choose the dad pictogram</li><li>Touch the erase button</li></ul> | It should show the hello pictogram on the phrases compositor.|
+|21|TC -021| Erase the Phrase | Remove the phrase from the phrases compositor. | <ul><li>Choose the Hello pictogram </li><li>Choose the dad pictogram</li><li>Long click Erase button.</li></ul> | It should show the phrases compositor empty.|
+|22|TC -022| More Options Button| Show more pictograms | <ul><li>Touch the button show more pictograms</li></ul> | It should show another four pictograms.
+|23|TC -023| Share an audio |  The user can share the message as audio.|   <ul><li>Choose the Hello pictogram </li><li>Choose the dad pictogram</li><li>Touch share button</li><li>Choose the audio icon</li><li>Choose the contact to send this message.</li></ul>| It should send an audio message.|
+|24|TC -024| Share a text |  The user can share the message as text.|  <ul><li>Choose the Hello pictogram </li><li>Choose the dad pictogram</li><li>Touch share button</li><li>Choose the Image icon</li><li>Choose the contact to send this message.</li></ul> | It should send a picture message.|
+|25|TC -025| Share a picture |The user can share the message as picture.  |  <ul><li>Choose the Hello pictogram </li><li>Choose the dad pictogram</li><li>Touch share button</li><li>Choose the text icon</li><li>Choose the contact to send this message.</li></ul> | It should send a text message.|
+|26|TC -026| Games |The user can go to games.  |  <ul><li>Choose the Game icon </li></ul> | It should open the game menu.|
+|27|TC -027| Phrases |The user can go to phrases.  |  <ul><li>Choose the Heart icon </li></ul> | It should open the phrases view.|
+|28|TC -028| settings |The user can go to the settings.  |  <ul><li>Open the hidden menu, swiping left to right. </li><li>Choose the settings option</li></ul> | It should open the settins.|
+|29|TC -029| About OTTAA |The user can know about the OTTAA version.  |  <ul><li>Open the hidden menu, swiping left to right. </li><li>Choose the about OTTAA option</li></ul> | It should open the About OTTAA windows.|
+|30|TC -030| Generate Report Premium|The user can know their progress  | <ul><li>Open the hidden menu, swiping left to right. </li><li>Choose the Generate report option</li></ul> | It should open the Report .|
+|31|TC -031| Generate Report free|System show  |  <ul><li>Open the hidden menu, swiping left to right. </li><li>Choose the Generate Report option</li></ul> | It should open the Subscription windows.|
+|32|TC -032| Edit Pictogram Premium|System show  |  <ul><li>Make a long click on the Hello pictogram. </li><li>Choose the edit option</li></ul> | It should open the Edit Pictograms windows.|
+|33|TC -033| Edit Pictogram free|System show  |  <ul><li>Make a long click on the Hello pictogram. </li><li>Choose the edit option</li></ul> | It should open the Subscription windows.|
 
 
-
-
-</TabItem>
-<TabItem value=" Create and Edit">
-
-| **Add Icon** |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|51|TC -51| Allows you to add photos from the camera? |  |  |  | 
-|52|TC -52| allows to add photo from gallery? |  |  |  | 
-|53|TC -53| does it allow me to add photos of arasaac? |  |  |  | 
-|54|TC -54| can you edit the name? |  |  |  | 
-|55|TC -55| Allows you to select the color range |  |  |  | 
-|56|TC -56| question to finish adding the picto? |  |  |  | 
-
-| **Edit Icon** |  |  |
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|57|TC -57| allows to change pictogram? |  |  |  | 
-|58|TC -58| allows you to edit the text? |  |  |  | 
-|59|TC -59| save the changes and the group show those changes? |  |  |  | 
-|60|TC -60| question to finish editing the pict? |  |  |  | 
-
-|**Add Group** |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|61|TC -61| Does it comply with the same as adding a pictogram? |  |  |  | 
-|62|TC -62| gallery groups shows the added group? |  |  |  | 
-|63|TC -63| question to finish adding the group? |  |  |  | 
-
-| **Edit Group** |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|64|TC -64| allow to update photo? |  |  |  | 
-|65|TC -65| allow to update name? |  |  |  | 
-|66|TC -66| gallery groups shows the edited icon? |  |  |  | 
-|67|TC -67| question to finish editing the group? |  |  |  | 
-
-| **Report** |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|68|TC -68| shows the 5 most used phrases? |  |  |  | 
-|69|TC -69| shows the percentage of phrase usage per month during the day? |  |  |  | 
-|70|TC -70| shows the percentage of most used groups? |  |  |  | 
-|71|TC -71| shows the percentage of use of the game in the most used groups? |  |  |  | 
-
-| **Assign Tags** |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|72|TC -72|Load select tags dialog? |  |  |  
-|73|TC -73|Allows you to select the labels |  |  |  | 
-|74|TC -74|Save selected tags? |  |  |  | 
-|75|TC -75|In case it is a group, the selected tags assign to the related picts? |  |  |  | 
-|76|TC -76|Can I assign the tag individually to a pict? |  |  |  | 
-|77|TC -77|Load the groups/ picts within the main window according to the assigned tag ? |  |  |  | 
-</TabItem>
-<TabItem value ="Games">
-
-| **Which is the picto** |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|78|TC -78| displays the user's precision level |  |  |  | 
-|79|TC -79| load the correct group? |  |  |  | 
-|80|TC -80| save the score of the group? |  |  |  | 
-
-| **Join Pictograms** |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|81|TC -81| displays the user's precision level |  |  |  | 
-|82|TC -82| are the pictograms marked correctly? |  |  |  | 
-|83|TC -83| save the score of the group? |  |  |  | 
-|84|TC -84| The option to strengthen knowledge works |  |  |  | 
-
-</TabItem>
-<TabItem value="Phrases">
-
-| **Favorite Phrases** |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|85|TC -85| Load dialogue favorite phrases? |  |  | 
-|86|TC -86| Allows you to select one of the 4 most used phrases? |  |  |  | 
-|87|TC -87| When selecting the phrase the system speaks ? |  |  |  | 
-|88|TC -88| Does the system say the selected phrase? |  |  |  | 
-
-</TabItem>
-<TabItem value =" Setting">
-
-| Settings |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|89|TC -89| does the disable edit picto option work? |  |  |  | 
-|90|TC -90| Does the calendar option work? |  |  | disabled | 
-|91|TC -91| Does the location option work? |  |  |  | 
-|92|TC -92| Does the talk and delete option work? |  |  |  | 
-|93|TC -93| Does the screen wipe function work? |  |  |  | 
-|94|TC -93| does the custom tts option work? |  |  |  | 
-|95|TC -95| When the custom tts function is activated, does it allow you to modify the voice speed? |  |  |  | 
-|96|TC -96| When the custom tts function is activated, does it allow you to modify the tone of voice? |  |  |  | 
-|97|TC -97| Allows you to activate the custom subtitle function? |  |  |  | 
-|98|TC -98| When the custom subtitle is activated, does it allow you to change the font size? |  |  |  | 
-|99|TC -99| Can you select the language? |  |  |  | 
-|100|TC -100| When selecting another language does the language of the application change? |  |  |  | 
-|101|TC -101| does the ottaa labs option work? |  |  |  | 
-|102|TC -102| does it go into the report? |  |  |  | 
-|103|TC -103| enters the about ? |  |  |  | 
-|104|TC -104| Does the button to access the backup work? |  |  | disabled | 
-|105|TC -105| sign out? |  |  |  | 
-
-
-| Login Activity |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|106|TC -106| close session is not lost? |  |  |  | 
-|107|TC -107| After closing the session and the application, the system does not throw any errors? |  |  |  | 
-|108|TC -108| the system as soon as you log in downloads all the groups and picts |  |  |  | 
-
-| Synchronization |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|109|TC -109| when i add the relationship on one tablet, the other tablet adds the relationship as soon as the app starts? |  |  |  | 
-|110|TC -110| When I delete the relationship with a pict, does the other tablet delete the relationship? |  |  |  | 
-|111|TC -111| Does the system synchronize the frequency of phrases?|  |  |  | 
-|112|TC -112| Does the system modify the data of the group in case it is edited from another device? |  |  |  | 
-|113|TC -113| Does the system update the groups in case of deleting any? |  |  |  | 
-|114|TC -114| does the system update the groups in case one is added? |  |  |  | 
-|115|TC -115| The system updates the score with respect to the affinity or knowledge that the user has with respect to the most used groups?|
-|116|TC -116|*This is seen with the noti games and in the report* |  |  |  | 
-|117|TC -117| Does the system remove the pictogram from a group in case it is removed from another device in the same group? |  |  |  | 
-|118|TC -118| Does the system enter a pictogram in the group when this pictogram is added in the group from another device? |  |  |  | 
-|119|TC -119| Does the system update the data of a pictogram when I modify it from another device? |  |  |  | 
-
-| Language |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|120|TC -120| translate into arabic |  |  |  | 
-|121|TC -121| Translate to English |  |  |  | 
-
-| Premium |  |  |
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|122|TC -122| Blocks in real time |  |  |  | 
-|123|TC -123| Clear screen wipe when active? |  |  |  | 
-
-
-
-
-| Screen Scanning |  |  |  | 
-| ---| ---| ---| ---|---|---|---|
-|**Sr N°**| **TestCase**|**Feature**|**Description**|**Stepst to execute**| **Expected Result**| **Error Description**
-|124|TC -124| display the pointer over each item in the sweep? |  |  | 
-|125|TC -125| Allows you to change the sweep option in real time? |  |  |  | 
-|126|TC -126| When integrating a device, be it a mouse or a joystick, does it work correctly with the option to advance and accept? |  |  |  | 
-|  |  |  |  |
 </TabItem>
 </Tabs>
+
+
+## Get your Files
+### [Onboarding Test Case](/files/OTTAA_onboarding_test_cases.xlsx)
+### [Main Screen Test Case](/files/OTTAA_mainScreen_test_cases.xlsx)
+
