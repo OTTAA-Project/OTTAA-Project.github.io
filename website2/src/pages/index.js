@@ -7,8 +7,13 @@ import HomepageFeatures from '@site/src/components/HomepageDescription';
 import HomepageBlocks from '@site/src/components/HomepageBlocks';
 import styles from './index.module.css';
 
+
+
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const lightImage ='/img/white_logo.png';
+
   return (
     <header >
       <div className={styles.container}>
@@ -33,12 +38,17 @@ function HomepageHeader() {
           </div>
         </div>
         <div></div>
-        <div className={styles.blockSize2}>
-          <img src={"/img/white_logo.png"} className={styles.customTitleImage}/>
-        </div>
-      </div>
-      
+        <div className={styles.blockSize2}>  
+        <div>
+        <img
+              src={lightImage}
+              className={styles.customTitleImage}
+            />
 
+        </div>
+        </div>
+        </div>
+    
     </header>
   );
 }
@@ -50,6 +60,8 @@ function HomepageImage(){
     </div>
   );
 }
+
+
 
 
 
@@ -72,6 +84,7 @@ export default function Home() {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
+      
       <HomepageImage />
 
       <main>

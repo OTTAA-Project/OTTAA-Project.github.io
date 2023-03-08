@@ -27,11 +27,6 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Community',
-      items: [ 'Community/Code-of-Conduct','Community/Contributing','Community/faqs','Community/privacypolicy'],
-    },
-    {
-      type: 'category',
       label: 'Accesibility',
       items: ['Accesibility/accesibility-suite','Accesibility/pressAndPress','Accesibility/scrollAndPress','Accesibility/sipAndPuff','Accesibility/wormAccessible'],
     },
@@ -39,6 +34,11 @@ const sidebars = {
       type: 'category',
       label: 'Testing',
       items: ['Testing/Java/Android/Android_Java_Testing',],
+    },
+    {
+      type: 'category',
+      label: 'Community',
+      items: [ 'Community/Code-of-Conduct','Community/Contributing','Community/faqs','Community/privacypolicy'],
     },
   ],
    
