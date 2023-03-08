@@ -116,3 +116,21 @@ Link{
   padding: 20px;
   left: 0%;
 }
+
+.blockSize2 img {
+  object-fit: cover;
+  border-radius:50%;
+  width: 150px;
+  height: 150px;
+}
+
+
+p.primaryColor{
+  color: black;
+}
+
+p.primaryColorDark{
+  color:white
+}
+
+
